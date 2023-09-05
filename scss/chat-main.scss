@@ -78,6 +78,9 @@
                                 top: 15px;
                                 width: auto;
                                 padding: 0px;
+                                box-shadow: none;
+                                width: auto !important;
+                                max-width: unset !important;
                                 .search{
                                     width: 15px;
                                 }
@@ -157,16 +160,19 @@
                     .chat-listing{
                         display: flex;
                         flex-grow: 1;
+                        margin-bottom: 30px;
+                        align-items: end;
+                        gap: 15px;
                         .avathar{
                             position: relative;
                             width: 39px;
                             height: 39px;
                             background-color: #E0EAFF;
                             border-radius: 50%;
-                            margin-right: 15px;
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            margin-bottom: 30px;
                             .avathar-name{
                                 letter-spacing: 0px;
                                 color: #1D63FF;
@@ -179,6 +185,7 @@
                         .chat-info-message{
                             display: flex;
                             flex-direction: column;
+                            max-width: 60%;
                             .chat-message{
                                 background: #FFFFFF;
                                 border-radius: 25px 25px 0px 25px;
@@ -187,24 +194,91 @@
                                 font-size: 16px;
                                 line-height: 1.5;
                                 font-family: $font-primary;
+                                p{
+                                    margin-bottom: 0px;
+                                    color: #787993;
+                                    font-size: 16px;
+                                    line-height: 1.5;
+                                    font-family: $font-primary;
+                                }
+                                .file-area{
+                                    display: flex;
+                                    background-color: #E5EFFF;
+                                    padding: 10px 15px;
+                                    margin-top: 15px;
+                                    border-radius: 5px;
+                                    align-items: center;
+                                    min-width: 300px;
+                                    .file-icons{
+                                        background-color: #1D63FF;
+                                        border-radius: 10px;
+                                        padding: 5px;
+                                        margin-right: 15px;
+                                        display: block;
+                                        img{
+                                            width: 20px;
+                                            height: 20px;
+                                            object-fit: contain;
+                                        }
+                                    }
+                                    .file-name{
+                                        color: #787993;
+                                        font-size: 14px;
+                                        line-height: 1.5;
+                                        font-family: $font-primary;
+                                        margin-right: 15px;
+                                        flex-grow: 1;
+                                        p{
+                                            margin-bottom: 0px;
+                                            color: #787993;
+                                            font-size: 14px;
+                                            line-height: 1.5;
+                                            font-family: $font-primary;
+                                        }
+                                    }
+                                    .file-download{
+                                        padding: 0px;
+                                        margin: 0px;
+                                        outline: none;
+                                        box-shadow: none;
+                                        width: auto !important;
+                                        max-width: unset !important;
+                                        img{
+                                            width: 20px;
+                                        }
+                                    }
+                                }
                             }
                             .chat-info{
                                 color: #787993;
                                 font-size: 16px;
                                 line-height: 1.5;
                                 font-family: $font-primary;
+
                             }
                         }
 
                         &.sent{
                             flex-direction: row-reverse;
-                            .chat-listing{
-                                .avathar{
-                                    margin-right: 20px;
+                            .chat-info-message{
+                                .chat-info{
+                                    text-align: right;
+                                    margin-top: 5px;
                                 }
                             }
                         }
-                        &.resve{}
+                        &.resve{
+                            .chat-info-message{
+                                .chat-message{
+                                    border-radius: 25px 25px 25px 0px;
+                                    background-color: #4694f91a;
+                                }
+                                .chat-info{
+                                    text-align: left;
+                                    margin-top: 5px;
+                                }
+                            }
+                        }
                     }
                 }
             }

@@ -102,6 +102,9 @@
   top: 15px;
   width: auto;
   padding: 0px;
+  box-shadow: none;
+  width: auto !important;
+  max-width: unset !important;
 }
 .chat .tab-content .tab-pane .chat-area-view .chat-side-bar .chat-top-bar .search .btn-search .search {
   width: 15px;
@@ -178,6 +181,9 @@
 .chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing {
   display: flex;
   flex-grow: 1;
+  margin-bottom: 30px;
+  align-items: end;
+  gap: 15px;
 }
 .chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing .avathar {
   position: relative;
@@ -185,10 +191,10 @@
   height: 39px;
   background-color: #E0EAFF;
   border-radius: 50%;
-  margin-right: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 .chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing .avathar .avathar-name {
   letter-spacing: 0px;
@@ -201,6 +207,7 @@
 .chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing .chat-info-message {
   display: flex;
   flex-direction: column;
+  max-width: 60%;
 }
 .chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing .chat-info-message .chat-message {
   background: #FFFFFF;
@@ -211,6 +218,60 @@
   line-height: 1.5;
   font-family: "Baloo 2", sans-serif;
 }
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing .chat-info-message .chat-message p {
+  margin-bottom: 0px;
+  color: #787993;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Baloo 2", sans-serif;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing .chat-info-message .chat-message .file-area {
+  display: flex;
+  background-color: #E5EFFF;
+  padding: 10px 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  align-items: center;
+  min-width: 300px;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing .chat-info-message .chat-message .file-area .file-icons {
+  background-color: #1D63FF;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 15px;
+  display: block;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing .chat-info-message .chat-message .file-area .file-icons img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing .chat-info-message .chat-message .file-area .file-name {
+  color: #787993;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Baloo 2", sans-serif;
+  margin-right: 15px;
+  flex-grow: 1;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing .chat-info-message .chat-message .file-area .file-name p {
+  margin-bottom: 0px;
+  color: #787993;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Baloo 2", sans-serif;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing .chat-info-message .chat-message .file-area .file-download {
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  box-shadow: none;
+  width: auto !important;
+  max-width: unset !important;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing .chat-info-message .chat-message .file-area .file-download img {
+  width: 20px;
+}
 .chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing .chat-info-message .chat-info {
   color: #787993;
   font-size: 16px;
@@ -220,9 +281,19 @@
 .chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing.sent {
   flex-direction: row-reverse;
 }
-.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing.sent .chat-listing .avathar {
-  margin-right: 20px;
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing.sent .chat-info-message .chat-info {
+  text-align: right;
+  margin-top: 5px;
 }
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing.resve .chat-info-message .chat-message {
+  border-radius: 25px 25px 25px 0px;
+  background-color: rgba(70, 148, 249, 0.1019607843);
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing.resve .chat-info-message .chat-info {
+  text-align: left;
+  margin-top: 5px;
+}
+
 @media (max-width: 1679px) {
   .chat {
     padding: 60px 0px;
