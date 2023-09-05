@@ -290,6 +290,77 @@
   text-align: right;
   margin-top: 5px;
 }
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing.sent.loader {
+  opacity: 0.6;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing.sent.loader .avathar {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  margin-bottom: 0px !important;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing.sent.loader .avathar::before {
+  content: "";
+  background: transparent linear-gradient(180deg, #EEF2FB 0%, #BACAEC 50%);
+  background-repeat: no-repeat;
+  background-size: 800px 104px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  z-index: 9;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeholderShimmer;
+  -webkit-animation-timing-function: linear;
+  opacity: 0.2;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing.sent.loader .avathar::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: transparent linear-gradient(180deg, #EEF2FB 0%, #BACAEC 100%);
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing.sent.loader .chat-info-message {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 25px 25px 0px 25px;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing.sent.loader .chat-info-message::before {
+  content: "";
+  background: transparent linear-gradient(180deg, #EEF2FB 0%, #BACAEC 50%);
+  background-repeat: no-repeat;
+  background-size: 800px 104px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  z-index: 9;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeholderShimmer;
+  -webkit-animation-timing-function: linear;
+  opacity: 0.2;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing.sent.loader .chat-info-message::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: transparent linear-gradient(180deg, #EEF2FB 0%, #BACAEC 100%);
+}
 .chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing.resve .chat-info-message .chat-message {
   border-radius: 25px 25px 25px 0px;
   background-color: rgba(70, 148, 249, 0.1019607843);
@@ -298,7 +369,140 @@
   text-align: left;
   margin-top: 5px;
 }
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing.resve.loader {
+  opacity: 0.6;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing.resve.loader .avathar {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  margin-bottom: 0px !important;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing.resve.loader .avathar::before {
+  content: "";
+  background: transparent linear-gradient(180deg, #EEF2FB 0%, #BACAEC 50%);
+  background-repeat: no-repeat;
+  background-size: 800px 104px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  z-index: 9;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeholderShimmer;
+  -webkit-animation-timing-function: linear;
+  opacity: 0.2;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing.resve.loader .avathar::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: transparent linear-gradient(180deg, #EEF2FB 0%, #BACAEC 100%);
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing.resve.loader .chat-info-message {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 25px 25px 25px 0px;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing.resve.loader .chat-info-message::before {
+  content: "";
+  background: transparent linear-gradient(180deg, #EEF2FB 0%, #BACAEC 50%);
+  background-repeat: no-repeat;
+  background-size: 800px 104px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  z-index: 9;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeholderShimmer;
+  -webkit-animation-timing-function: linear;
+  opacity: 0.2;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing.resve.loader .chat-info-message::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: transparent linear-gradient(180deg, #EEF2FB 0%, #BACAEC 100%);
+}
 
+.loading-view {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.loading-view .loading-area {
+  background: #1D63FF;
+  border-radius: 23px;
+  padding: 8px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.loading-view .loading-area .icon {
+  background: #FFFFFF;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.loading-view .loading-area .icon::before {
+  content: "";
+  border: 1px solid #f3f3f3; /* Light grey */
+  border-top: 1px solid #1D63FF; /* Blue */
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  left: -2px;
+  top: -2px;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+}
+.loading-view .loading-area .icon img {
+  width: 12px;
+}
+.loading-view .loading-area .text {
+  color: #FFFFFF;
+  font-size: 11px;
+  line-height: 1.5;
+  font-family: "Baloo 2", sans-serif;
+  margin-right: 10px;
+}
+
+@-webkit-keyframes placeholderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @media (max-width: 1679px) {
   .chat {
     padding: 60px 0px;
