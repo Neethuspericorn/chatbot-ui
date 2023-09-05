@@ -63,6 +63,7 @@
                     background-color: #FFFFFF;
                     border-radius: 14px;
                     width: 325px;
+                    min-width: 325px;
                     .chat-top-bar{
                         padding: 20px 15px 15px;
                         .search{
@@ -537,6 +538,19 @@
                 }
             }
         }
+        .tab-content{
+            .tab-pane {
+                .chat-area-view {
+                    .chat-history-view {
+                        .chat-listing {
+                            .chat-info-message{
+                                max-width: 90%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -547,6 +561,40 @@
             .nav-item{
                 .nav-link {
                     font-size: 14px;
+                }
+            }
+        }
+        .tab-content{
+            padding: 20px 15px;
+            .tab-pane {
+                .chat-area-view {
+                    flex-wrap: wrap;
+                    .chat-side-bar{
+                        width: 100%;
+                        min-width: auto;
+                        max-height: 400px;
+                        overflow: auto;
+                    }
+                    .chat-history-view{
+                        padding: 20px 0px;
+                        max-width: 600px;
+                        overflow-x: auto;
+                        .chat-listing {
+                            .chat-info-message{
+                                width: calc(100% - 80px);
+                                max-width: unset;
+                                .chat-message{
+                                    padding: 15px !important;
+                                    p{
+                                        font-size: 14px;
+                                    }
+                                    .file-area{
+                                        min-width: auto ;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -562,5 +610,27 @@
 @media($sm-479){
     .chat{
         padding: 15px 0px;
+        .chat-nav-area{
+            .nav-item {
+                width: 100%;
+                .nav-link{
+                    width: 100%;
+                    border-radius: 10px 10px 0px 0px;
+                }
+            }
+        }
+        .chat-area-view {
+            .chat-history-view{
+                .chat-listing{
+                    .chat-info-message{
+                        .chat-message{
+                            .file-area{
+                                flex-wrap: wrap;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

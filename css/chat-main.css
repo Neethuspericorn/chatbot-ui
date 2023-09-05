@@ -84,6 +84,7 @@
   background-color: #FFFFFF;
   border-radius: 14px;
   width: 325px;
+  min-width: 325px;
 }
 .chat .tab-content .tab-pane .chat-area-view .chat-side-bar .chat-top-bar {
   padding: 20px 15px 15px;
@@ -527,6 +528,9 @@
   .chat .chat-nav-area .nav-item .nav-link {
     font-size: 15px;
   }
+  .chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing .chat-info-message {
+    max-width: 90%;
+  }
 }
 @media (max-width: 991px) {
   .chat {
@@ -534,6 +538,36 @@
   }
   .chat .chat-nav-area .nav-item .nav-link {
     font-size: 14px;
+  }
+  .chat .tab-content {
+    padding: 20px 15px;
+  }
+  .chat .tab-content .tab-pane .chat-area-view {
+    flex-wrap: wrap;
+  }
+  .chat .tab-content .tab-pane .chat-area-view .chat-side-bar {
+    width: 100%;
+    min-width: auto;
+    max-height: 400px;
+    overflow: auto;
+  }
+  .chat .tab-content .tab-pane .chat-area-view .chat-history-view {
+    padding: 20px 0px;
+    max-width: 600px;
+    overflow-x: auto;
+  }
+  .chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing .chat-info-message {
+    width: calc(100% - 80px);
+    max-width: unset;
+  }
+  .chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing .chat-info-message .chat-message {
+    padding: 15px !important;
+  }
+  .chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing .chat-info-message .chat-message p {
+    font-size: 14px;
+  }
+  .chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing .chat-info-message .chat-message .file-area {
+    min-width: auto;
   }
 }
 @media (max-width: 767px) {
@@ -544,6 +578,16 @@
 @media (max-width: 479px) {
   .chat {
     padding: 15px 0px;
+  }
+  .chat .chat-nav-area .nav-item {
+    width: 100%;
+  }
+  .chat .chat-nav-area .nav-item .nav-link {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .chat .chat-area-view .chat-history-view .chat-listing .chat-info-message .chat-message .file-area {
+    flex-wrap: wrap;
   }
 }
 
