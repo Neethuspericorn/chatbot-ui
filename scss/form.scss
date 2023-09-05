@@ -1,0 +1,75 @@
+@import "partials/partials";
+
+.form-check{
+    .form-check-input{
+        &[type=checkbox]{
+            border-radius: 3px;
+        }
+        &:focus{
+            box-shadow: none;
+        }
+        // &:checked{
+             
+        // }
+    }
+    .form-check-label{
+        font-size: 16px;
+         
+        @media screen and (max-width: 1440px){
+            font-size: 14px;
+        }
+         
+    }
+}
+
+.form{
+    .form-label{ 
+        font-size: 16px;
+        margin-bottom: 0.5em;
+        color: #193674;
+        @media screen and (max-width: 1200px){
+            font-size: 14px;
+        }
+        
+    }
+    .form-group{
+        padding-bottom: 25px;
+        @media screen and (max-width: 1200px){
+            padding-bottom: 20px; 
+        }
+        position: relative;
+    }
+    .error{
+        color: #ff4848;
+        font-size: 0.75rem;
+        position: absolute;
+        top: calc(100% - 30px);
+        &:not(.shown){
+            display: none;
+        }
+    }
+    
+    .form-control{
+        font-size: 16px;
+        margin-bottom: 5px;
+        padding: 16px 20px;
+        color: #1D1D39;
+        background-color: #F2F6FF;
+        border: 1px solid #F2F6FF;
+        &::placeholder{
+            opacity: 0.5;
+        }
+        @media screen and (max-width: 1440px){
+            font-size: 14px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+        @media screen and (max-width: 1200px){
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+        &:focus{
+            box-shadow: none;
+        }
+    }
+}

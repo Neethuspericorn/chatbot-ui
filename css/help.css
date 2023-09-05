@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.top-header {
+  background: transparent linear-gradient(180deg, #00449C 0%, #083CAF 100%);
+  padding: 70px 0px;
+}
+.top-header .topbar-sec {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.top-header .topbar-sec .heading {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 0px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+}
+.top-header .topbar-sec .tag-name {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 19px;
+  line-height: normal;
+  margin-bottom: 30px;
+  font-weight: 400;
+  color: #BACAEC;
+  text-align: center;
+  width: 100%;
+}
+.top-header .topbar-sec .search-area {
+  position: relative;
+  display: flex;
+}
+@media (min-width: 991px) {
+  .top-header .topbar-sec .search-area {
+    width: 800px;
+  }
+}
+.top-header .topbar-sec .search-area .form-control {
+  padding: 20px 60px;
+  border: 1px solid #BACAEC;
+  border-radius: 36px;
+  background: #FFFFFF;
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-position: 25px 25px;
+}
+
+.help-center .main-head {
+  color: #193674;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 42px;
+  line-height: normal;
+  margin-bottom: 30px;
+  font-weight: 600;
+  width: 100%;
+}
+.help-center .sq-list li {
+  padding-left: 0px !important;
+}
+
+.secondary-head .btn-areas {
+  display: flex;
+  justify-content: center;
+  padding: 70px 0px;
+  gap: 30px;
+}
+.secondary-head .btn-areas .box-area {
+  padding: 30px 100px;
+  background: #FFFFFF;
+  border: 1px solid #BACAEC;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.secondary-head .btn-areas .box-area img {
+  margin-bottom: 20px;
+  max-width: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.secondary-head .btn-areas .box-area .light-head {
+  color: #193674;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 27px;
+  line-height: normal;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 1679px) {
+  .top-header {
+    padding: 60px 0px;
+  }
+  .top-header .topbar-sec .heading {
+    font-size: 40px;
+  }
+  .secondary-head .btn-areas .box-area {
+    padding: 30px 90px;
+  }
+  .secondary-head .btn-areas .box-area .light-head {
+    font-size: 26px;
+  }
+  .help-center .main-head {
+    font-size: 40px;
+  }
+  .secondary-head .btn-areas {
+    padding: 60px 0px;
+  }
+}
+@media (max-width: 1441px) {
+  .top-header {
+    padding: 55px 0px;
+  }
+  .top-header .topbar-sec .heading {
+    font-size: 38px;
+  }
+  .secondary-head .btn-areas .box-area {
+    padding: 30px 80px;
+  }
+  .secondary-head .btn-areas .box-area .light-head {
+    font-size: 25px;
+  }
+  .help-center .main-head {
+    font-size: 38px;
+  }
+  .secondary-head .btn-areas {
+    padding: 50px 0px;
+  }
+}
+@media (max-width: 991px) {
+  .top-header {
+    padding: 50px 0px;
+  }
+  .top-header .topbar-sec .heading {
+    font-size: 35px;
+  }
+  .secondary-head .btn-areas .box-area {
+    padding: 30px 70px;
+  }
+  .secondary-head .btn-areas .box-area .light-head {
+    font-size: 24px;
+  }
+  .help-center .main-head {
+    font-size: 36px;
+  }
+  .secondary-head .btn-areas {
+    padding: 40px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .top-header {
+    padding: 45px 0px;
+  }
+  .top-header .topbar-sec .heading {
+    font-size: 33px;
+  }
+  .secondary-head .btn-areas .box-area {
+    padding: 30px 30px;
+  }
+  .secondary-head .btn-areas .box-area .light-head {
+    font-size: 23px;
+  }
+  .help-center .main-head {
+    font-size: 35px;
+  }
+  .secondary-head .btn-areas {
+    padding: 30px 0px;
+  }
+  .top-header .topbar-sec .search-area {
+    width: 100%;
+  }
+  .top-header .topbar-sec .search-area .form-control {
+    padding: 15px 50px;
+    background-position: 22px 19px;
+  }
+}
+@media (max-width: 479px) {
+  .top-header {
+    padding: 40px 0px;
+  }
+  .top-header .topbar-sec .heading {
+    font-size: 28px;
+  }
+  .secondary-head .btn-areas .box-area .light-head {
+    font-size: 22px;
+    text-align: center;
+  }
+  .help-center .main-head {
+    font-size: 28px;
+  }
+  .secondary-head .btn-areas {
+    padding: 20px 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .secondary-head .btn-areas .box-area {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=help.css.map */

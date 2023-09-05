@@ -1,0 +1,113 @@
+@import "partials/partials";
+
+.footer-sec {
+    padding: 50px 0;
+    .footer-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .f-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media ($sm-767) {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+            a {
+                display: inline-block;
+
+                img {
+                    max-height: 40px;
+                    object-fit: contain;
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+
+        .f-qk-links {
+            display: flex;
+            align-items: center;
+
+
+            @media ($sm-767) {
+                flex: 0 0 100%;
+                max-width: 100%;
+                padding-top: 20px;
+                justify-content: center;
+            }
+
+            .link-m {
+                padding-right: 15px;
+                display: inline-flex;
+
+                .qk-link {
+                    display: inline-block;
+                    color: #fff;
+                    font-size: 18px;
+                    transition: .3s;
+                    text-decoration: none;
+                    text-align: left;
+                    font: normal 18px $font-primary;
+                    color: #FFFFFF;
+
+                    @media ($sm-1679) {
+                        font-size: 16px;
+                    }
+
+                    @media ($sm-1441) {
+                        font-size: 14px;
+                    }
+
+                    @media ($sm-1199) {
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .f-soc-block {
+                display: flex;
+                align-items: center;
+
+                .f-soc {
+                    text-decoration: none;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 43px;
+                    height: 43px;
+                    padding: 2px;
+                    background-color: #684FD1;
+                    border-radius: 50%;
+                    margin-left: 25px;
+                    transition: .3s;
+
+                    img {
+                        width: 50%;
+                        height: 50%;
+                        object-fit: contain;
+                    }
+
+                    @media ($sm-767) {
+                        width: 32px;
+                        height: 32px;
+                        margin-left: 10px;
+                    }
+
+                    &:hover {
+                        transform: translateY(-5px);
+                        box-shadow: 0 10px 6px -6px rgba($color: #000000, $alpha: 0.3);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// .copyright-sec {
+// }
+

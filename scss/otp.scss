@@ -1,0 +1,192 @@
+@import "partials/partials";
+.otp{
+    .modal-otp{
+        max-width: 750px;
+    }
+    .modal-content{
+        .modal-header{
+            .btn-close{
+                width: 37px;
+                height: 37px;
+                background: #EFF4FF;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12.337' height='12.334' viewBox='0 0 12.337 12.334'%3E%3Cpath id='Icon_ionic-ios-close' data-name='Icon ionic-ios-close' d='M18.916,17.456l4.406-4.406a1.033,1.033,0,0,0-1.46-1.46L17.455,16l-4.406-4.406a1.033,1.033,0,1,0-1.46,1.46L16,17.456l-4.406,4.406a1.033,1.033,0,0,0,1.46,1.46l4.406-4.406,4.406,4.406a1.033,1.033,0,0,0,1.46-1.46Z' transform='translate(-11.285 -11.289)' fill='%23193674'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+        }
+        .modal-body{
+            .otp-sec{
+                .otp-img{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    .otp-img-sec{
+                        max-height: 150px;
+                    }
+                    .otp-head{
+                        color: #193674;
+                        font-size: 27px;
+                        line-height: 1.5;
+                        font-family: $font-primary;
+                        margin-bottom: 10px;
+                    }
+                }
+                .otp-text{
+                    p{
+                        text-align: center;
+                        letter-spacing: 0px;
+                        color: #4C5D84;
+                        font-size: 16px;
+                        line-height: 1.5;
+                        font-family: $font-primary;
+                        margin-bottom: 10px;
+                        font-weight: 500;
+                        a{
+                            font-weight: 600;
+                            text-decoration: underline;
+                            color: #4C5D84;
+                        }
+                    }
+                }
+                .form-area-otp{
+                    margin-top: 20px;
+                    .veri{
+                        color: #193674;
+                        font-size: 13px;
+                        line-height: 1.5;
+                        font-family: $font-primary;
+                        margin-bottom: 10px;
+                        font-weight: 500;
+                        display: inline-block;
+                    }
+                    .form-input-area{
+                        padding-left: 100px;
+                        padding-right: 100px;
+                        .form-view{
+                            display: flex;
+                        }
+                        .form-control{
+                            height: 56px;
+                            background: #F2F6FF;
+                            border: 1px solid #DEE8FF;
+                            border-radius: 9px;
+                            text-align: center;
+                            outline: none;
+                            color: #193674;
+                            font-size: 23px;
+                            line-height: 1.5;
+                            font-weight: 600;
+                            margin-left: 15px;
+                            &:first-child{
+                                margin-left: 0px;
+                            }
+                        }
+                    }
+                    .remid-vlue{
+                        p{
+                            text-align: center;
+                            letter-spacing: 0px;
+                            color: #4C5D84;
+                            font-size: 16px;
+                            line-height: 1.5;
+                            font-family: $font-primary;
+                            margin-bottom: 10px;
+                            font-weight: 500;
+                            margin-top: 15px;
+                            span{
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                    .btn-area{
+                        margin-top: 40px;
+                        margin-bottom: 40px;
+                        .btn-sub{
+                            font-family: $font-primary;
+                            background: #1D63FF;
+                            border-radius: 27px;
+                            color: #FFFFFF;
+                            font-size: 16px;
+                            line-height: 1.5;
+                            padding: 10px 80px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1679px){
+    .otp .modal-content .modal-body .otp-sec .otp-img .otp-head{
+        font-size: 25px;
+    }
+    .otp .modal-content .modal-body .otp-sec .otp-text p{
+        font-size: 15px;
+    }
+    .otp .modal-content .modal-body .otp-sec .form-area-otp .veri{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+}
+@media(max-width:1440px){
+    .otp .modal-content .modal-body .otp-sec .otp-img .otp-head{
+        font-size: 24px;
+    }
+}
+@media(max-width:1280px){
+    .otp .modal-content .modal-body .otp-sec .otp-img .otp-head{
+        font-size: 23px;
+    }
+}
+@media(max-width:1119px){
+    .otp .modal-content .modal-body .otp-sec .otp-img .otp-head{
+        font-size: 22px;
+    }
+}
+@media(max-width:991px){
+    .otp .modal-content .modal-body .otp-sec .form-area-otp .btn-area{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+}
+@media(max-width:767px){
+    .otp .modal-otp {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .otp .modal-content .modal-body .otp-sec .form-area-otp .form-input-area{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media(max-width:600px){
+    .otp .modal-content .modal-body .otp-sec .form-area-otp .form-input-area{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .otp .modal-content .modal-body .otp-sec .form-area-otp .form-input-area .form-view{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .otp .modal-content .modal-body .otp-sec .form-area-otp .form-input-area .form-control{
+        margin-bottom: 15px;
+        width: calc(100% / 3 - 15px);
+        &:nth-child(4n){
+            margin-left: 0px !important;
+        }
+
+    }
+    
+}
+@media(max-width:500px){
+    .otp .modal-content .modal-body .otp-sec .form-area-otp .form-input-area .form-view{
+        flex-wrap: wrap;
+    }
+}

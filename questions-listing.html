@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot Index</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/slick-theme.min.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/home.css"> 
+    <link rel="stylesheet" href="css/price.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/questions.css">
+    <link rel="stylesheet" href="css/pagination.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/tooltips.css">
+</head>
+<body>
+    <div class="topbar">
+        <span class="img"><img src="img/bothead.svg" alt="powernap"></span>
+        <span class="txt">The chatbot's currently on a power nap, soaking in all the juicy details about your company. So, hold your horses before expecting full-on awesomeness</span>
+        
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo"></a>
+                
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                     
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <span class="ico"><img src="img/home.svg" alt=""></span>
+                                <span class="txt">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="ico"><img src="img/help.svg" alt=""></span>
+                                <span class="txt">Questions</span> 
+                                </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="ico"><img src="img/help-web-button.svg" alt=""></span>
+                                <span class="txt">Help</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="table-header">
+            <div class="container">
+                <div class="row align-items-center table-header-row">
+                    <div class="col-3 col-lg-6">
+                        <div class="title-block text-start mb-0">
+                            <h3 class="title table-title">Questions</h3>
+                        </div>
+                    </div>
+                    <div class="col-9  col-lg-6 questions-actions-block">
+                        <div class="questions-actions">
+                            <!--<div class="custom-search-cover">
+                                <div class="input-group">
+                                    <input type="text" class="search-inp form-control" placeholder="Search..." aria-label="Search" aria-describedby="SearchBtn">
+                                    <button class="btn search-btn" type="button" id="SearchBtn">
+                                        <img src="img/search.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>-->
+                             <div class="dropdown"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn btn-secondary  btn-icon btn-filter">
+                                    <span class="txt">Filter</span>
+                                    <span class="ico"><img src="img/filter.svg" alt="filter"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Filter Option</a></li>
+                                    <li><a class="dropdown-item" href="#">Another Filter Option</a></li>
+                                    <li><a class="dropdown-item" href="#">Filter Option</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-primary btn-icon  btn-add"  data-bs-toggle="modal" data-bs-target="#addQuestion">
+                                <span class="txt">Add Questions</span>
+                                <span class="ico"><img src="img/plus-circle.svg" alt="add"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+         
+        <section class="table-contents">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="table-responsive">
+                            <table class="table align-middle">
+                                <thead>
+                                    <tr>
+                                        <td width="100"><span class="d-block text-center slNo">Sl No.</span></td>
+                                        <td width="100"><span class="d-block text-center">Date</span></td>
+                                        <td ><span class="d-block text-center">Question</span></td>
+                                        <td ><span class="d-block text-center">Answer</span></td>
+                                        <td width="120"><span class="d-block text-center">Actions</span></td>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td class="text-center"><span class="dated">01 Jan 2023</span></td>
+                                        <td>
+                                            <div class="tbl-qst">Lorem ipusum is a dummy text?</div>
+                                        </td>
+                                        <td>
+                                            <div class="tbl-ansr">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum molestiae totam voluptatibus sed ab inventore iste,  
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="act-btns">
+                                                <button class="btn act-btn edit"  data-bs-toggle="modal" data-bs-target="#editQuestion" >  
+                                                    <img src="img/edit.svg" alt="edit" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Edit" data-bs-custom-class="custom-tooltip">
+                                                </button>
+                                                <button class="btn act-btn delete"  data-bs-toggle="modal" data-bs-target="#deleteQuestion">
+                                                    <img src="img/delete.svg" alt="delete" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Delete" data-bs-custom-class="custom-tooltip">
+                                                </button>
+                                                <button class="btn act-btn view"   data-bs-toggle="modal" data-bs-target="#viewQuestion"> 
+                                                    <img src="img/view.svg" alt="view" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="View" data-bs-custom-class="custom-tooltip">
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                 <!--   <tr>
+                                        <td class="text-center">2</td>
+                                        <td class="text-center"><span class="dated">01 Jan 2023</span></td>
+                                        <td>
+                                            <div class="tbl-qst">Lorem ipusum is a dummy text?</div>
+                                        </td>
+                                        <td>
+                                            <div class="tbl-ansr">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum molestiae totam voluptatibus sed ab inventore iste,  
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="act-btns">
+                                                <button class="btn act-btn edit">  
+                                                    <img src="img/edit.svg" alt="edit"  data-bs-toggle="modal" data-bs-target="#editQuestion">
+                                                </button>
+                                                <button class="btn act-btn delete"  data-bs-toggle="modal" data-bs-target="#deleteQuestion">
+                                                    <img src="img/delete.svg" alt="delete">
+                                                </button>
+                                                <button class="btn act-btn view"   data-bs-toggle="modal" data-bs-target="#viewQuestion"> 
+                                                    <img src="img/view.svg" alt="view">
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-center">3</td>
+                                        <td class="text-center"><span class="dated">01 Jan 2023</span></td>
+                                        <td>
+                                            <div class="tbl-qst">Lorem ipusum is a dummy text?</div>
+                                        </td>
+                                        <td>
+                                            <div class="tbl-ansr">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum molestiae totam voluptatibus sed ab inventore iste,  
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="act-btns">
+                                                <button class="btn act-btn edit">  
+                                                    <img src="img/edit.svg" alt="edit"  data-bs-toggle="modal" data-bs-target="#editQuestion">
+                                                </button>
+                                                <button class="btn act-btn delete"  data-bs-toggle="modal" data-bs-target="#deleteQuestion">
+                                                    <img src="img/delete.svg" alt="delete">
+                                                </button>
+                                                <button class="btn act-btn view"   data-bs-toggle="modal" data-bs-target="#viewQuestion"> 
+                                                    <img src="img/view.svg" alt="view">
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-center">4</td>
+                                        <td class="text-center"><span class="dated">01 Jan 2023</span></td>
+                                        <td>
+                                            <div class="tbl-qst">Lorem ipusum is a dummy text?</div>
+                                        </td>
+                                        <td>
+                                            <div class="tbl-ansr">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum molestiae totam voluptatibus sed ab inventore iste,  
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="act-btns">
+                                                <button class="btn act-btn edit">  
+                                                    <img src="img/edit.svg" alt="edit"  data-bs-toggle="modal" data-bs-target="#editQuestion">
+                                                </button>
+                                                <button class="btn act-btn delete"  data-bs-toggle="modal" data-bs-target="#deleteQuestion">
+                                                    <img src="img/delete.svg" alt="delete">
+                                                </button>
+                                                <button class="btn act-btn view"   data-bs-toggle="modal" data-bs-target="#viewQuestion"> 
+                                                    <img src="img/view.svg" alt="view">
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-center">5</td>
+                                        <td class="text-center"><span class="dated">01 Jan 2023</span></td>
+                                        <td>
+                                            <div class="tbl-qst">Lorem ipusum is a dummy text?</div>
+                                        </td>
+                                        <td>
+                                            <div class="tbl-ansr">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum molestiae totam voluptatibus sed ab inventore iste,  
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="act-btns">
+                                                <button class="btn act-btn edit">  
+                                                    <img src="img/edit.svg" alt="edit"  data-bs-toggle="modal" data-bs-target="#editQuestion">
+                                                </button>
+                                                <button class="btn act-btn delete"  data-bs-toggle="modal" data-bs-target="#deleteQuestion">
+                                                    <img src="img/delete.svg" alt="delete">
+                                                </button>
+                                                <button class="btn act-btn view"   data-bs-toggle="modal" data-bs-target="#viewQuestion"> 
+                                                    <img src="img/view.svg" alt="view">
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-center">6</td>
+                                        <td class="text-center"><span class="dated">01 Jan 2023</span></td>
+                                        <td>
+                                            <div class="tbl-qst">Lorem ipusum is a dummy text?</div>
+                                        </td>
+                                        <td>
+                                            <div class="tbl-ansr">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum molestiae totam voluptatibus sed ab inventore iste,  
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="act-btns">
+                                                <button class="btn act-btn edit">  
+                                                    <img src="img/edit.svg" alt="edit"  data-bs-toggle="modal" data-bs-target="#editQuestion">
+                                                </button>
+                                                <button class="btn act-btn delete"  data-bs-toggle="modal" data-bs-target="#deleteQuestion">
+                                                    <img src="img/delete.svg" alt="delete">
+                                                </button>
+                                                <button class="btn act-btn view"   data-bs-toggle="modal" data-bs-target="#viewQuestion"> 
+                                                    <img src="img/view.svg" alt="view">
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                     <tr>
+                                        <td class="text-center">7</td>
+                                        <td class="text-center"><span class="dated">01 Jan 2023</span></td>
+                                        <td>
+                                            <div class="tbl-qst">Lorem ipusum is a dummy text?</div>
+                                        </td>
+                                        <td>
+                                            <div class="tbl-ansr">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum molestiae totam voluptatibus sed ab inventore iste,  
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="act-btns">
+                                                <button class="btn act-btn edit">  
+                                                    <img src="img/edit.svg" alt="edit"  data-bs-toggle="modal" data-bs-target="#editQuestion">
+                                                </button>
+                                                <button class="btn act-btn delete"  data-bs-toggle="modal" data-bs-target="#deleteQuestion">
+                                                    <img src="img/delete.svg" alt="delete">
+                                                </button>
+                                                <button class="btn act-btn view"   data-bs-toggle="modal" data-bs-target="#viewQuestion"> 
+                                                    <img src="img/view.svg" alt="view">
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-center">8</td>
+                                        <td class="text-center"><span class="dated">01 Jan 2023</span></td>
+                                        <td>
+                                            <div class="tbl-qst">Lorem ipusum is a dummy text?</div>
+                                        </td>
+                                        <td>
+                                            <div class="tbl-ansr">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum molestiae totam voluptatibus sed ab inventore iste,  
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="act-btns">
+                                                <button class="btn act-btn edit">  
+                                                    <img src="img/edit.svg" alt="edit"  data-bs-toggle="modal" data-bs-target="#editQuestion">
+                                                </button>
+                                                <button class="btn act-btn delete"  data-bs-toggle="modal" data-bs-target="#deleteQuestion">
+                                                    <img src="img/delete.svg" alt="delete">
+                                                </button>
+                                                <button class="btn act-btn view"   data-bs-toggle="modal" data-bs-target="#viewQuestion"> 
+                                                    <img src="img/view.svg" alt="view">
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-center">9</td>
+                                        <td class="text-center"><span class="dated">01 Jan 2023</span></td>
+                                        <td>
+                                            <div class="tbl-qst">Lorem ipusum is a dummy text?</div>
+                                        </td>
+                                        <td>
+                                            <div class="tbl-ansr">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum molestiae totam voluptatibus sed ab inventore iste,  
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="act-btns">
+                                                <button class="btn act-btn edit">  
+                                                    <img src="img/edit.svg" alt="edit"  data-bs-toggle="modal" data-bs-target="#editQuestion">
+                                                </button>
+                                                <button class="btn act-btn delete"  data-bs-toggle="modal" data-bs-target="#deleteQuestion">
+                                                    <img src="img/delete.svg" alt="delete">
+                                                </button>
+                                                <button class="btn act-btn view"   data-bs-toggle="modal" data-bs-target="#viewQuestion"> 
+                                                    <img src="img/view.svg" alt="view">
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-center">10</td>
+                                        <td class="text-center"><span class="dated">01 Jan 2023</span></td>
+                                        <td>
+                                            <div class="tbl-qst">Lorem ipusum is a dummy text?</div>
+                                        </td>
+                                        <td>
+                                            <div class="tbl-ansr">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum molestiae totam voluptatibus sed ab inventore iste,  
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="act-btns">
+                                                <button class="btn act-btn edit">  
+                                                    <img src="img/edit.svg" alt="edit"  data-bs-toggle="modal" data-bs-target="#editQuestion">
+                                                </button>
+                                                <button class="btn act-btn delete"  data-bs-toggle="modal" data-bs-target="#deleteQuestion">
+                                                    <img src="img/delete.svg" alt="delete">
+                                                </button>
+                                                <button class="btn act-btn view"   data-bs-toggle="modal" data-bs-target="#viewQuestion"> 
+                                                    <img src="img/view.svg" alt="view">
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="pagenation-wrap">
+                            <nav aria-label="page nav" class="pagenationItems">
+                                <ul class="pagination">
+                                    <li class="page-item prevPage">
+                                        <a class="page-link disabled" href="#" aria-label="Previous">
+                                            <img src="img/pagi-left.svg" alt="prev">
+                                        </a>
+                                    </li>
+            
+                                    <li class="page-item">
+                                        <a class="page-link active" href="#">1</a>
+                                    </li>
+            
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+            
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+            
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+            
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+            
+                                    <li class="page-item nextPage">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <img src="img/pagi-right.svg" alt="next">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="footers">
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="fot-sec">
+                            <div class="logo">
+                                <img src="img/logo.svg" class="logo-img"/>
+                            </div>
+                            <div class="uselink">
+                                <ul>
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Questions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Help</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section class="copy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Copyright © 2023 Chatbot. Powered by Spericorn</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+  
+  <!-- Modals -->
+
+  <!-- 1: Add  Question  -->
+  <div class="modal fade" id="addQuestion" tabindex="-1" aria-labelledby="addQuestionLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="addQuestionLabel">Add Question</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           <form action="" class="form">
+                <div class="pb-4 val-cover">
+                    <label class="form-label" for="question">Question</label>
+                    <input type="text" class="form-control" id="question" name="question">
+                    <span class="val-msg">This field is required.</span>
+                </div>
+
+                <div class="pb-4 val-cover">
+                    <label  class="form-label"  for="question">Answer</label>
+                    <textarea rows="5" class="form-control" id="answer" name="answer"></textarea>
+                    <span class="val-msg">This field is required.</span>
+                </div>
+
+                <div class="modal-btns">
+                    <button type="button" class="btn btn-secondary btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary btn-save">Save</button>
+                </div>
+           </form>
+        </div>
+         
+      </div>
+    </div>
+  </div>
+
+   <!-- 1: Edit  Question  -->
+   <div class="modal fade" id="editQuestion" tabindex="-1" aria-labelledby="editQuestionLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="editQuestionLabel">Edit Question</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           <form action="" class="form">
+                <div class="pb-4"> 
+                    <label class="form-label" for="question">Question</label>
+                    <input type="text" class="form-control" id="question" name="question" value="Lorem ipsum dolor sit amet?">
+                </div>
+
+                <div class="pb-4">
+                    <label  class="form-label"  for="question">Answer</label>
+                    <textarea rows="5" class="form-control" id="answer" name="answer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, consectetur!</textarea>
+                </div>
+
+                <div class="modal-btns">
+                    <button type="button" class="btn btn-secondary btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary btn-save">Save</button>
+                </div>
+           </form>
+        </div>
+         
+      </div>
+    </div>
+  </div>
+
+  <!-- 2: View Question  -->
+  <div class="modal fade" id="viewQuestion" tabindex="-1" aria-labelledby="viewQuestionLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="viewQuestionLabel">Explain quantum computing in simple terms?</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="answer-wrap">
+                <p>
+                    Quantum computing is a type of computing that uses quantum-mechanical phenomena, such as superposition and entanglement, to perform operations on data. In traditional computing, a bit can only have two possible states: 0 or 1. In quantum computing, a quantum bit (qubit) can exist in a superposition of both states simultaneously, allowing for much faster computation. 
+                </p>
+                <p>
+                        Imagine you have a bunch of coins that you need to flip to get a specific outcome, but you can only flip one coin at a time. In traditional computing, you would have to flip each coin individually until you get the desired outcome. In quantum computing, you can flip all the coins at once, and they will exist in a superposition of both heads and tails until you measure them, collapsing the superposition into a single outcome.
+                </p>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="publ-info">
+                <div class="publ-title">Published on</div>
+                <div class="publ-date">02 January 2023, 12.44 PM</div>
+            </div>
+            <div class="modal-btns">
+                <button type="button" class="btn btn-secondary btn-edit"  data-bs-toggle="modal" data-bs-target="#editQuestion">
+                    <span class="img me-2"><img src="img/edit.svg" alt="edit"></span>
+                    <span class="txt">Edit</span>
+                </button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3: Delete Question  -->
+  <div class="modal fade" id="deleteQuestion" tabindex="-1" aria-labelledby="deleteLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-md modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h3 class="modal-title text-center delete-title" id="deleteLabel">Explain quantum computing in simple terms?</h3>
+
+            <div class="modal-btns deleteBtns">
+                <button type="button" class="btn btn-secondary btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary btn-save">Confirm</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+     
+</html>

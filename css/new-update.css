@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.top-bar-area {
+  padding: 12px;
+  background-color: #1D63FF;
+}
+.top-bar-area .top-bar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .top-bar-area .top-bar-content {
+    flex-wrap: wrap;
+  }
+}
+.top-bar-area .top-bar-content .icon {
+  margin-right: 10px;
+}
+@media (max-width: 767px) {
+  .top-bar-area .top-bar-content .icon {
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+}
+.top-bar-area .top-bar-content .content .text {
+  margin: 0px;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 1.3;
+  font-family: "Baloo 2", sans-serif;
+}
+@media (max-width: 767px) {
+  .top-bar-area .top-bar-content .content .text {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=new-update.css.map */

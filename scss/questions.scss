@@ -1,0 +1,215 @@
+
+.questions-actions{
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    
+    .btn{
+        .ico{
+            
+            img{
+                width: 18px;
+                height: 18px;
+                object-fit: contain;
+            }
+        }
+        @media screen and (max-width: 991px){
+            font-size: 12px;
+        }
+
+        .txt{
+            @media screen and (max-width: 600px){
+                display: none;
+            }
+        }
+
+        &-filter{
+            width: 200px;
+            max-width: 126px;
+            @media screen and (max-width: 991px){
+                max-width: 126px;   
+            }
+            @media screen and (max-width: 600px){
+                max-width: 60px;   
+            }
+        }
+        &-add{
+            @media screen and (max-width: 991px){
+                max-width: 126px;
+            }
+            @media screen and (max-width: 600px){
+                max-width: 60px;   
+            }
+            max-width: 208px;
+        }
+    }
+}
+
+.table-header{
+    padding-top: 40px;
+    padding-bottom: 28px;
+    @media screen and (max-width: 991px){
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    .table-title{
+        margin-bottom: 0;
+    }
+}
+
+.table{
+    font-size: 16px;
+    color: #193674;
+    border-collapse: separate;
+    border-spacing: 0 7px;
+    margin-bottom: 0;
+    @media screen and (max-width: 1440px){
+        font-size: 15px;
+    }
+    tr{
+        background-color: #F7F9FF;
+        &:nth-child(even){
+            background-color: #EDF3FF;
+        }
+        td{
+            height: 64px;
+            border-bottom: none;
+            @media screen and (max-width: 1440px){
+                height: 55px;
+            }
+            @media screen and (max-width: 991px){
+                height: 40px;
+            }
+            &:first-child{
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+                padding-left: 30px;
+                @media screen and (max-width: 991px){
+                    padding-left: 15px;
+                }
+            }
+            &:last-child{
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+                padding-right: 30px;
+                @media screen and (max-width: 991px){
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+
+    thead{
+        tr{
+            td{
+                height: 58px;
+                vertical-align: middle;
+                @media screen and (max-width: 1440px){
+                    height: 45px;
+                }
+                @media screen and (max-width: 991px){
+                    height: 32px;
+                }
+            }
+            background-color: #CEDDFF;
+            font-weight: 500;
+        }
+    }
+
+    &>:not(caption)>*>*{
+        box-shadow: none;
+        border-bottom: none;
+    }
+}
+.act-btns{
+    display: inline-flex;
+    gap: 15px;
+    margin: auto;
+}
+.tbl-qst,
+.tbl-ansr{
+    display:  block;
+    text-align: center;
+    margin: auto;
+}
+
+.tbl-qst{
+    min-width: 300px;
+    @media screen and (max-width: 1440px){
+        min-width: 220px;
+    }
+}
+.tbl-ansr{
+    width: 450px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @media screen and (max-width: 1440px){
+        width: 360px;
+    }
+    @media screen and (max-width: 1200px){
+        width: 300px;
+    }
+}
+.dated{
+    min-width: 100px;
+    display: block;
+    @media screen and (max-width: 991px){
+        min-width: 80px
+    }
+}
+.slNo{
+    min-width: 50px;
+    @media screen and (max-width: 991px){
+        min-width: 40px
+    }
+}
+.btn.act-btn{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27px;
+    height: 27px;
+    background-color: #D8E4FD;
+    img{
+        width: 40%;
+        height: 40%;
+        object-fit: contain;
+    }
+    &:hover{
+        background-color: #CEDDFF;
+    }
+}
+.custom-search-cover{
+    background-color: #E8EFFF;
+    color: #193674;
+    border-color: #E8EFFF;
+    border-radius: 30px;
+    overflow: hidden;
+    .search-inp{
+        background-color: #E8EFFF;
+        border: none;
+        box-shadow: none;
+        padding-left: 25px;
+        @media screen and (max-width: 991px){
+            font-size: 14px;
+        }
+    }
+    .search-btn{
+        border: none;
+        width: auto;
+        padding-right: 20px;
+        background-color: #E8EFFF;
+    }
+}
+@media (max-width: 400px) {
+    .table-header-row{
+        flex-wrap: wrap;
+        .questions-actions-block{
+            padding-top: 15px;
+            flex: 1 1 auto;
+            width: 100%;
+        }
+    }    
+}

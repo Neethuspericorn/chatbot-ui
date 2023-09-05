@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot Index</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/slick-theme.min.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/home.css"> 
+    <link rel="stylesheet" href="css/price.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/questions.css">
+    <link rel="stylesheet" href="css/pagination.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/form.css">
+
+    <link rel="stylesheet" href="css/chat-main.css">
+
+</head>
+<body>
+   
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo"></a>
+                
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                     
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <span class="ico"><img src="img/home.svg" alt=""></span>
+                                <span class="txt">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="ico"><img src="img/help.svg" alt=""></span>
+                                <span class="txt">Questions</span> 
+                                </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="ico"><img src="img/help-web-button.svg" alt=""></span>
+                                <span class="txt">Help</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+       <section class="chat">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs chat-nav-area">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#currentChat">Current Chat <span class="badge">05</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#completedChat">Completed chat <span class="badge">05</span></a>
+                        </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane container active" id="currentChat">
+                            <div class="chat-area-view">
+                                <div class="chat-side-bar">
+                                    <div class="chat-top-bar">
+                                        <div class="search">
+                                            <input type="text" class="form-control" placeholder="Search" />
+                                            <button class="btn btn-search">
+                                                <img src="img/search.svg" class="search"/>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="chat-viewers-list">
+                                        <div class="chat-viewer">
+                                            <div class="chat-avathar">
+                                                <div class="avather-info">JA</div>
+                                                <div class="status"></div>
+                                            </div>
+                                            <div class="chat-user-info">
+                                                <div class="chat-viewer-name">James Alexander</div>
+                                                <div class="chat-viewer-info">19 May 2023, 5.30pm</div>
+                                            </div>
+                                        </div>
+                                        <div class="chat-viewer">
+                                            <div class="chat-avathar">
+                                                <div class="avather-info">AJ</div>
+                                            </div>
+                                            <div class="chat-user-info">
+                                                <div class="chat-viewer-name">Alexander James</div>
+                                                <div class="chat-viewer-info">19 May 2023, 5.30pm</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-history-view">
+                                    <div class="chat-listing sent">
+                                        <div class="avathar">
+                                            <div class="avathar-name">AJ</div>
+                                        </div>
+                                        <div class="chat-info-message ">
+                                            <div class="chat-message">Lorem Ipsum is simply dummy text of the printing and typesetting.</div>
+                                            <div class="chat-info">3:13 PM</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="chat-listing resve">
+                                        <div class="avathar">
+                                            <div class="avathar-name">AJ</div>
+                                        </div>
+                                        <div class="chat-info-message">
+                                            <div class="chat-message">Lorem Ipsum is simply dummy text of the printing and typesetting.</div>
+                                            <div class="chat-info">3:13 PM</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="completedChat">...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+    </main>
+
+    <div class="footers">
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="fot-sec">
+                            <div class="logo">
+                                <img src="img/logo.svg" class="logo-img"/>
+                            </div>
+                            <div class="uselink">
+                                <ul>
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Questions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Help</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section class="copy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Copyright © 2023 Chatbot. Powered by Spericorn</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+     
+</html>

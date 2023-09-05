@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot Index</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/slick-theme.min.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/home.css"> 
+    <link rel="stylesheet" href="css/price.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/questions.css">
+    <link rel="stylesheet" href="css/pagination.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/otp.css">
+</head>
+<body>
+
+    <header class="opacity-0">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo"></a>
+                
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                     
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <span class="ico"><img src="img/home.svg" alt=""></span>
+                                <span class="txt">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="ico"><img src="img/help.svg" alt=""></span>
+                                <span class="txt">Questions</span> 
+                                </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="ico"><img src="img/help-web-button.svg" alt=""></span>
+                                <span class="txt">Help</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="table-header  opacity-0">
+            <div class="container">
+                <div class="row align-items-center table-header-row">
+                    <div class="col-3 col-lg-6">
+                        <div class="title-block text-start mb-0">
+                            <h3 class="title table-title">OTP</h3>
+                        </div>
+                    </div>
+                    <div class="col-9  col-lg-6 questions-actions-block">
+                        <div class="questions-actions">        
+                            <button class="btn btn-primary btn-icon  btn-add"  data-bs-toggle="modal" data-bs-target="#otp">
+                                <span class="txt">OTP</span>
+                                <span class="ico"><img src="img/plus-circle.svg" alt="add"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+    </main>
+
+    <div class="footers opacity-0">
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="fot-sec">
+                            <div class="logo">
+                                <img src="img/logo.svg" class="logo-img"/>
+                            </div>
+                            <div class="uselink">
+                                <ul>
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Questions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Help</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section class="copy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Copyright © 2023 Chatbot. Powered by Spericorn</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+  
+  <!-- Modals -->
+
+  <!-- 1: OTP  -->
+  <div class="modal fade otp" id="otp" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="addQuestionLabel" aria-hidden="false">
+    <div class="modal-dialog  modal-otp modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="otp-sec">
+                <div class="otp-img">
+                    <img src="img/otp-text-img.svg" class="otp-img-sec"/>
+                    <h3 class="otp-head">Validate OTP</h3>
+                </div>
+
+                <div class="otp-text">
+                    <p>A One Time Passcode has been sent to <a href="#">j*h*a*t*n*@gmail.com</a></p>
+                    <p>Please enter the OTP Below to verify your Email Address. The code is valid for 30 Mins</p>
+                </div>
+
+                <div class="form-area-otp">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row form-input-area">
+                                    <div class="col-md-12">
+                                        <lable class="veri">Verification Code</lable>
+                                    </div>
+                                    <div class="col-md-12 form-view">
+                                        <input type="text" class="form-control" id="" placeholder="" maxlength="1"/>
+                                   
+                                        <input type="text" class="form-control" id="" placeholder="" maxlength="1"/>
+                                  
+                                        <input type="text" class="form-control" id="" placeholder="" maxlength="1"/>
+                                   
+                                        <input type="text" class="form-control" id="" placeholder="" maxlength="1"/>
+                                    
+                                        <input type="text" class="form-control" id="" placeholder="" maxlength="1"/>
+                                 
+                                        <input type="text" class="form-control" id="" placeholder="" maxlength="1"/>
+
+                                    </div>
+
+                                    <div class="col-md-12 remid-vlue">
+                                        <p>Resend In <span>0:45</span></p>
+                                        <p>Didn’t Receive code? <a href="#">Send Again</a></p>
+                                    </div>
+
+                                    <div class="col-md-12 btn-area">
+                                        <button class="btn btn-sub">Continue</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+    var container = document.getElementsByClassName("form-input-area")[0];
+    container.onkeyup = function(e) {
+        var target = e.srcElement;
+        var maxLength = parseInt(target.attributes["maxlength"].value, 10);
+        var myLength = target.value.length;
+        if (myLength >= maxLength) {
+            var next = target;
+            while (next = next.nextElementSibling) {
+                if (next == null)
+                    break;
+                if (next.tagName.toLowerCase() == "input") {
+                    next.focus();
+                    break;
+                }
+            }
+        }
+    }
+
+    var otpModal = new bootstrap.Modal(document.getElementById('otp'));
+    otpModal.show();
+    </script>
+     
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot Index</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/slick-theme.min.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/update.css">
+</head>
+<body>
+    <div class="topbar">
+        <span class="img"><img src="img/bothead.svg" alt="powernap"></span>
+        <span class="txt">The chatbot's currently on a power nap, soaking in all the juicy details about your company. So, hold your horses before expecting full-on awesomeness</span>
+        
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo"></a>
+                
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                     
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <span class="ico"><img src="img/home.svg" alt=""></span>
+                                <span class="txt">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="ico"><img src="img/help.svg" alt=""></span>
+                                <span class="txt">Questions</span> 
+                                </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="ico"><img src="img/help-web-button.svg" alt=""></span>
+                                <span class="txt">Help</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="table-header">
+            <div class="container">
+                <div class="row align-items-center table-header-row">
+                    <div class="col-3 col-lg-6">
+                        <div class="title-block text-start mb-0">
+                            <h3 class="title table-title">My Profile</h3>
+                        </div>
+                    </div>
+                    <div class="col-9  col-lg-6 profile-actions-block">
+                        <div class="profile-actions">
+                            <button class="btn btn-icon btn-secondary btn-profile" data-bs-toggle="modal" data-bs-target="#resetpassword">
+                                <span class="ico"><img src="img/reset-password.svg" alt="add"></span>
+                                <span class="txt">Reset Password</span>
+                            </button>
+                            <button class="btn btn-icon btn-secondary btn-profile"  data-bs-toggle="modal" data-bs-target="#editprofile">
+                                <span class="ico"><img src="img/edit-profile.svg" alt="add"></span>
+                                <span class="txt">Edit Account</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <section class="profile-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="profile-img-edit">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="img/profile-img.png" class="profile-view-img "/>
+                                </div>
+                                <div class="upload-sec">
+                                    <img src="img/camera.svg" class="upload"/>
+                                    <input type="file" class="file-upload"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-profile">
+                            <div class="form-control-icon">
+                                <img src="img/Icon-user.svg"/>
+                            </div>
+                            <div class="form-control-view">
+                                <div class="profile-tag">Name</div>
+                                <div class="profile-name">adam.baker5759</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-profile">
+                            <div class="form-control-icon">
+                                <img src="img/industry.svg"/>
+                            </div>
+                            <div class="form-control-view">
+                                <div class="profile-tag">Industry</div>
+                                <div class="profile-name">Construction</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-profile">
+                            <div class="form-control-icon">
+                                <img src="img/industry-solid.svg"/>
+                            </div>
+                            <div class="form-control-view">
+                                <div class="profile-tag">Industry Name</div>
+                                <div class="profile-name">Construction</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-profile">
+                            <div class="form-control-icon">
+                                <img src="img/corporate-name.svg"/>
+                            </div>
+                            <div class="form-control-view">
+                                <div class="profile-tag">Company Name</div>
+                                <div class="profile-name">adam.baker5759</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-profile">
+                            <div class="form-control-icon">
+                                <img src="img/icon-phone.svg"/>
+                            </div>
+                            <div class="form-control-view">
+                                <div class="profile-tag">Phone Number</div>
+                                <div class="profile-name">Construction</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-profile">
+                            <div class="form-control-icon">
+                                <img src="img/feather-mail.svg"/>
+                            </div>
+                            <div class="form-control-view">
+                                <div class="profile-tag">Email Address</div>
+                                <div class="profile-name">Construction</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         
+        
+
+    </main>
+
+    <div class="footers">
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="fot-sec">
+                            <div class="logo">
+                                <img src="img/logo.svg" class="logo-img"/>
+                            </div>
+                            <div class="uselink">
+                                <ul>
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Questions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Help</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section class="copy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Copyright © 2023 Chatbot. Powered by Spericorn</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+  
+  <!-- Modals -->
+
+  <!-- 1: Add  Question  -->
+  <div class="modal fade" id="editprofile" tabindex="-1" aria-labelledby="editprofile" aria-hidden="true">
+    <div class="modal-dialog  modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="editprofile">Edit Profile</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           <form action="" class="form editProfile">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="pb-4"> 
+                            <label class="form-label" for="Name">Name <span class="requre">*</span></label>
+                            <input type="text" class="form-control" id="name" name="Name" value="Adam.Baker5759">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="pb-4"> 
+                            <label class="form-label" for="Industry">Industry <span class="requre">*</span></label>
+                            <select class="form-control" id="Industry" name="industry">
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="pb-4"> 
+                            <label class="form-label" for="industryName ">Industry Name <span class="requre">*</span></label>
+                            <input type="text" class="form-control" id="industryName" name="industryName" value="Select Your Industry">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="pb-4"> 
+                            <label class="form-label" for="companyName">Company Name <span class="requre">*</span></label>
+                            <input type="text" class="form-control" id="companyName" name="companyName" value="Company Name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="pb-4"> 
+                            <label class="form-label" for="PhoneNumber">Phone Number <span class="requre">*</span></label>
+                            <input type="text" class="form-control" id="PhoneNumber" name="PhoneNumber" value="+91 0000000">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="pb-4"> 
+                            <label class="form-label" for="email">Email Address <span class="requre">*</span></label>
+                            <input type="text" class="form-control" id="email" name="email" value="email@email.com">
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="modal-btns">
+                    <button type="button" class="btn btn-secondary btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary btn-save">Save</button>
+                </div>
+           </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Reset Password-->
+  <div class="modal fade" id="resetpassword" tabindex="-1" aria-labelledby="resetpassword" aria-hidden="true">
+    <div class="modal-dialog  modal-md modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="resetpassword">Reset Password</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           <form action="" class="form editProfile">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="pb-4 password"> 
+                            <label class="form-label" for="oldPassword">Old Password <span class="requre">*</span></label>
+                            <input type="text" class="form-control" id="oldPassword" name="oldPassword" value="">
+                            <img src="img/view.svg" class="eye"/>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="pb-4 password"> 
+                            <label class="form-label" for="NewPassword">New Password <span class="requre">*</span></label>
+                            <input type="text" class="form-control" id="NewPassword" name="NewPassword" value="">
+                            <img src="img/view.svg" class="eye"/>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="pb-4 password"> 
+                            <label class="form-label" for="conPassword">Confirm Password <span class="requre">*</span></label>
+                            <input type="text" class="form-control" id="conPassword" name="conPassword" value="">
+                            <img src="img/view.svg" class="eye"/>
+                        </div>
+                    </div>
+                    
+                </div>
+        
+                <div class="modal-btns">
+                    <button type="button" class="btn btn-secondary btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary btn-save">Save</button>
+                </div>
+           </form>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+
+</body>
+
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+     
+</html>
