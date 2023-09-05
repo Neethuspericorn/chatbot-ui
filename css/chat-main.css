@@ -183,6 +183,56 @@
   padding: 20px;
   flex-grow: 1;
   flex-direction: column;
+  position: relative;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .user-info-panel {
+  display: flex;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.0392156863);
+  border: 1px solid #EEF2FB;
+  border-radius: 14px;
+  padding: 15px 20px;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .user-info-panel .avather {
+  width: 40px;
+  height: 40px;
+  background: rgba(29, 99, 255, 0.1019607843);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .user-info-panel .avather img {
+  width: 25px;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .user-info-panel .user-data-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .user-info-panel .user-data-info .heading {
+  color: #193674;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Baloo 2", sans-serif;
+  margin-bottom: 0px;
+  line-height: 1;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .user-info-panel .user-data-info .text {
+  margin-bottom: 0px;
+  font-size: 12px;
+  font-family: "Baloo 2", sans-serif;
+  color: #97A1B5;
+}
+.chat .tab-content .tab-pane .chat-area-view .chat-history-view .user-info-panel .user-btn-area .btn-edit {
+  border: none;
+  box-shadow: none;
+  outline: none;
 }
 .chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing {
   display: flex;
@@ -553,7 +603,7 @@
   }
   .chat .tab-content .tab-pane .chat-area-view .chat-history-view {
     padding: 20px 0px;
-    max-width: 600px;
+    max-width: 100%;
     overflow-x: auto;
   }
   .chat .tab-content .tab-pane .chat-area-view .chat-history-view .chat-listing .chat-info-message {
@@ -570,6 +620,53 @@
     min-width: auto;
   }
 }
+.profile-upload {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.profile-upload .profile-round {
+  position: relative;
+}
+.profile-upload .profile-round .profile-img {
+  width: 88px;
+  height: 88px;
+  background: #EFF4FF;
+  border: 4px solid #BED1F8;
+  border-radius: 50%;
+}
+.profile-upload .profile-round .profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.profile-upload .profile-round .upload-btn {
+  width: 20px;
+  height: 20px;
+  background: #1D63FF;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 4px;
+  right: 2px;
+  cursor: pointer;
+  z-index: 9;
+}
+.profile-upload .profile-round .upload-btn img {
+  width: 10px;
+}
+.profile-upload .profile-round .upload-btn .file-upload {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
 @media (max-width: 767px) {
   .chat {
     padding: 20px 0px;

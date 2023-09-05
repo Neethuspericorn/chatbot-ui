@@ -120,6 +120,21 @@
                                     </div>
                                 </div>
                                 <div class="chat-history-view">
+                                    <div class="user-info-panel">
+                                        <div class="avather">
+                                            <img src="img/user.svg"/>
+                                        </div>
+                                        <div class="user-data-info">
+                                            <h3 class="heading">User 1</h3>
+                                            <p class="text">Last chatted 19 May 2023, 5.30pm</p>
+                                        </div>
+                                        <div class="user-btn-area">
+                                            <button class="btn btn-edit"  data-bs-toggle="modal" data-bs-target="#editprofile">
+                                                <img src="img/edit-profile.svg"/>
+                                            </button>
+                                        </div>
+                                    </div>
+
                                     <div class="chat-listing sent">
                                         <div class="avathar">
                                             <div class="avathar-name">AJ</div>
@@ -224,6 +239,63 @@
             </div>
         </section>
     </div>
+
+  
+  <div class="modal fade" id="editprofile" tabindex="-1" aria-labelledby="editprofile" aria-hidden="true">
+    <div class="modal-dialog  modal-sm modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="editprofile">Edit Profile</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           <form action="" class="form editProfile">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="pb-2">
+                            <div class="profile-upload">
+                                <div class="profile-round">
+                                    <div class="profile-img">
+                                        <img src="img/user.svg"/>
+                                    </div>
+                                    <div class="upload-btn">
+                                        <input type="file" class="file-upload"/>
+                                        <img src="img/uploadBtn.svg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="pb-2"> 
+                            <label class="form-label" for="Name">Name <span class="requre">*</span></label>
+                            <input type="text" class="form-control" id="name" name="Name" value="Adam.Baker5759">
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-12">
+                        <div class="pb-2"> 
+                            <label class="form-label" for="email">Email ID<span class="requre">*</span></label>
+                            <input type="text" class="form-control" id="email" name="email" value="Company Name">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="pb-2"> 
+                            <label class="form-label" for="email">Contact Number <span class="requre">*</span></label>
+                            <input type="text" class="form-control" id="ContactNumber" name="ContactNumber" value="email@email.com">
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="modal-btns">
+                    <button type="button" class="btn btn-secondary btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary btn-save">Save</button>
+                </div>
+           </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 
