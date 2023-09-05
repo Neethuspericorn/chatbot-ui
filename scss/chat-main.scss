@@ -706,7 +706,11 @@
         padding: 20px 0px;
     }
 }
-
+@media($lg-480){
+    .modal-sm {
+        --bs-modal-width: 400px;
+    }
+}
 @media($sm-479){
     .chat{
         padding: 15px 0px;
