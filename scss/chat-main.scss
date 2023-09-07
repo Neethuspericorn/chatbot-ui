@@ -164,6 +164,9 @@
                     flex-grow: 1;
                     flex-direction: column;
                     position: relative;
+                    max-height: calc(100vh - 300px);
+                    overflow-y: auto;
+                    overflow-x: hidden;
                     .user-info-panel{
                         display: flex;
                         background: #FFFFFF;

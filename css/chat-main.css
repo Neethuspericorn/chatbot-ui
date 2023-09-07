@@ -184,6 +184,9 @@
   flex-grow: 1;
   flex-direction: column;
   position: relative;
+  max-height: calc(100vh - 300px);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .chat .tab-content .tab-pane .chat-area-view .chat-history-view .user-info-panel {
   display: flex;
