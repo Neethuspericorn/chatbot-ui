@@ -118,6 +118,7 @@
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
+                                flex: 0 0 auto;
                                 .avather-info{
                                     letter-spacing: 0px;
                                     color: #1D63FF;
@@ -187,6 +188,7 @@
                             align-items: center;
                             justify-content: center;
                             margin-right: 15px;
+                            flex: 0 0 auto;
                             img{
                                 width: 25px;
                             }
@@ -234,6 +236,7 @@
                             justify-content: center;
                             align-items: center;
                             margin-bottom: 30px;
+                            flex: 0 0 auto;
                             .avathar-name{
                                 letter-spacing: 0px;
                                 color: #1D63FF;
