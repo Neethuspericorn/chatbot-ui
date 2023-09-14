@@ -223,33 +223,32 @@
 
 <script>
 //Initial references
-    const input = document.querySelectorAll(".input");
-    const inputField = document.querySelector(".inputfield");
-    const submitButton = document.getElementById("submit");
-    let inputCount = 0,
-    finalInput = "";
+const input = document.querySelectorAll(".input");
+const inputField = document.querySelector(".inputfield");
+const submitButton = document.getElementById("submit");
+let inputCount = 0,
+  finalInput = "";
 
 //Update input
-    const updateInputConfig = (element, disabledStatus) => {
-        element.disabled = disabledStatus;
-        if (!disabledStatus) {
-           element.focus();
-        } else {
-            element.blur();
-        }
+const updateInputConfig = (element, disabledStatus) => {
+  element.disabled = disabledStatus;
+  if (!disabledStatus) {
+    element.focus();
+  } else {
+    element.blur();
+  }
+};
 
-    };
-
-    input.forEach((element) => {
-        element.addEventListener("keyup", (e) => {
-            e.target.value = e.target.value.replace(/[^0-9]/g, "");
-            let { value } = e.target;
+input.forEach((element) => {
+  element.addEventListener("keyup", (e) => {
+    e.target.value = e.target.value.replace(/[^0-9]/g, "");
+    let { value } = e.target;
 
     if (value.length == 1) {
       updateInputConfig(e.target, true);
-      if (inputCount <= 6 && e.key != "Backspace") {
+      if (inputCount <= 5 && e.key != "Backspace") {
         finalInput += value;
-        if (inputCount < 6) {
+        if (inputCount < 5) {
           updateInputConfig(e.target.nextElementSibling, false);
         }
       }
@@ -267,26 +266,39 @@
     } else if (value.length > 1) {
       e.target.value = value.split("")[0];
     }
-    //submitButton.classList.add("hide");
-
-
+    submitButton.classList.add("hide");
   });
 });
 
 window.addEventListener("keyup", (e) => {
-  if (inputCount > 6) {
-    //submitButton.classList.remove("hide");
-    //submitButton.classList.add("show");
+  if (inputCount > 5) {
+    submitButton.classList.remove("hide");
+    submitButton.classList.add("show");
     if (e.key == "Backspace") {
       finalInput = finalInput.substring(0, finalInput.length - 1);
       updateInputConfig(inputField.lastElementChild, false);
       inputField.lastElementChild.value = "";
       inputCount -= 1;
-      //submitButton.classList.add("hide");
+      submitButton.classList.add("hide");
     }
   }
 });
 
+const validateOTP = () => {
+  alert("Success");
+};
+
+//Start
+const startInput = () => {
+  inputCount = 0;
+  finalInput = "";
+  input.forEach((element) => {
+    element.value = "";
+  });
+  updateInputConfig(inputField.firstElementChild, false);
+};
+
+window.onload = startInput();
 </script>
      
 </html>
