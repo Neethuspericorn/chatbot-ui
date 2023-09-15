@@ -232,7 +232,6 @@ let inputCount = 0,
 
 //Update input
 const updateInputConfig = (element, disabledStatus) => {
-  element.disabled = disabledStatus;
   if (!disabledStatus) {
     element.focus();
   } else {
@@ -241,6 +240,7 @@ const updateInputConfig = (element, disabledStatus) => {
 };
 
 input.forEach((element) => {
+    debugger;
   element.addEventListener("keyup", (e) => {
     e.target.value = e.target.value.replace(/[^0-9]/g, "");
     let { value } = e.target;
@@ -272,7 +272,7 @@ input.forEach((element) => {
 });
 
 window.addEventListener("keyup", (e) => {
-  if (inputCount > 5) {
+  if (inputCount > 7) {
     submitButton.classList.remove("hide");
     submitButton.classList.add("show");
     if (e.key == "Backspace") {
@@ -298,7 +298,6 @@ const startInput = () => {
   });
   updateInputConfig(inputField.firstElementChild, false);
 };
-
 window.onload = startInput();
 </script>
      
