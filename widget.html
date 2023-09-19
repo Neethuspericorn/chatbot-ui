@@ -1,289 +1,554 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChatBot Index</title>
-
     <link rel="stylesheet" href="css/bootstrap.css">
-
     <link rel="stylesheet" href="css/slick.min.css">
     <link rel="stylesheet" href="css/slick-theme.min.css">
-
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/banner.css">
-    <link rel="stylesheet" href="css/home.css"> 
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/price.css">
     <link rel="stylesheet" href="css/faq.css">
     <link rel="stylesheet" href="css/questions.css">
     <link rel="stylesheet" href="css/pagination.css">
     <link rel="stylesheet" href="css/modals.css">
     <link rel="stylesheet" href="css/form.css">
-
     <link rel="stylesheet" href="css/widget.css">
-
-</head>
-<body>
-   
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo"></a>
-                
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                     
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
-                                <span class="ico"><img src="img/home.svg" alt=""></span>
-                                <span class="txt">Home</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span class="ico"><img src="img/help.svg" alt=""></span>
-                                <span class="txt">Questions</span> 
-                                </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span class="ico"><img src="img/help.svg" alt=""></span>
-                                <span class="txt">Widget</span> 
-                                </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span class="ico"><img src="img/help-web-button.svg" alt=""></span>
-                                <span class="txt">Help</span>
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-
-            </div>
-        </nav>
-    </header>
-
-    <main>
-       <section class="widget">
+      <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 accordion-basic-info">
-                    <div class="accordion" id="accordionExample">
-
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Basic Info
-                            </button>
-                          </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                
-                                <div class="acco-main-view">
-                                    <div class="profile-avatar">
-                                        <div class="profile-hed">
-                                            <h3 class="head">Display Picture</h3>
-                                        </div>
-                                        <div class="profile-view">
-                                            <div class="avatar">
-                                                <!--<img src="" class="avatar"/>-->
-                                            </div>
-                                            <div class="avatar-size">
-                                                <span class="txt">20x20</span>
-                                            </div>
-                                            <div class="avatar-btn">
-                                                <button class="btn btn-change">Change</button>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="acco-form-area">
-                                        <div class="acco-form-hed">
-                                            <h3 class="head">Alias <span class="waning">*</span> </h3>
-                                        </div>
-                                        <input type="text" name="" id="" class="form-contraol" placeholder="Kataline">
-                                    </div>
-
-                                    <div class="acco-form-area">
-                                        <div class="acco-form-hed">
-                                            <h3 class="head">Welcome Message <span class="waning">*</span> </h3>
-                                        </div>
-                                        <textarea class="form-contraol" name="" id="" placeholder="Thank you for contacting us, How can I help you?"></textarea>
-                                    </div>
-
-                                    <div class="acco-form-area">
-                                        <div class="acco-form">
-                                            <div class="check-area">
-                                                <span class="text-view">Enable Automatic Chat Popup</span>
-                                                <label class="switch">
-                                                    <input type="checkbox" checked>
-                                                    <span class="slider round"></span>
-                                                </label>
-                                            </div>
-                                            <div class="frm-view">
-                                                <input type="text" name="" id="" class="form-contraol"/>
-                                                <span class="txt-view">Seconds</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>                                
-
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.svg" alt="logo">
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <span class="ico">
+                    <img src="img/home.svg" alt="">
+                  </span>
+                  <span class="txt">Home</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="ico">
+                    <img src="img/help.svg" alt="">
+                  </span>
+                  <span class="txt">Questions</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="ico">
+                    <img src="img/help.svg" alt="">
+                  </span>
+                  <span class="txt">Widget</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="ico">
+                    <img src="img/help-web-button.svg" alt="">
+                  </span>
+                  <span class="txt">Help</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="widget">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 accordion-basic-info">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Basic Info </button>
+                  </h2>
+                  
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    
+                    <div class="accordion-body">
+                      <div class="acco-main-view">
+                        <div class="profile-avatar">
+                          <div class="profile-hed">
+                            <h3 class="head">Display Picture</h3>
+                          </div>
+                          <div class="profile-view">
+                            <div class="avatar">
+                              <img src="img/avatar.svg" class="avatar" />
+                            </div>
+                            <div class="avatar-size">
+                              <span class="txt">20x20</span>
+                            </div>
+                            <div class="avatar-btn">
+                              <button class="btn btn-change">Change</button>
                             </div>
                           </div>
                         </div>
 
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Widget Theme
-                            </button>
-                          </h2>
-                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-
-                                <div class="acco-main-view">
-                                    jn,jn
-                                </div>
-
-                            </div>
+                        <div class="acco-form-area">
+                          <div class="acco-form-hed">
+                            <h3 class="head">Alias <span class="waning">*</span>
+                            </h3>
                           </div>
+                          <input type="text" name="" id="" class="form-contraol" placeholder="Kataline">
                         </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Accordion Item #3
-                            </button>
-                          </h2>
-                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+
+                        <div class="acco-form-area">
+                          <div class="acco-form-hed">
+                            <h3 class="head">Welcome Message <span class="waning">*</span>
+                            </h3>
+                          </div>
+                          <textarea class="form-contraol" name="" id="" placeholder="Thank you for contacting us, How can I help you?"></textarea>
+                        </div>
+
+                        <div class="acco-form-area">
+                          <div class="acco-form">
+                            <div class="check-area">
+                              <span class="text-view">Enable Automatic Chat Popup</span>
+                              <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                              </label>
+                            </div>
+                            <div class="frm-view">
+                              <input type="text" name="" id="" class="form-contraol" />
+                              <span class="txt-view">Seconds</span>
                             </div>
                           </div>
                         </div>
                       </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-6 widget-preview">1</div>
-            </div>
-        </div>
-       </section>
-    </main>
-
-    <div class="footers">
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="fot-sec">
-                            <div class="logo">
-                                <img src="img/logo.svg" class="logo-img"/>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Widget Theme </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="acco-main-view">
+                        <div class="row">
+                          <div class="col-md-6 half-area">
+                            <div class="acco-form-area">
+                              <div class="acco-form-hed">
+                                <h3 class="head">Main Theme Color</h3>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn btn-dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span class="color-icons"></span>
+                                  <span class="color-text">Aegean & Cerulan</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <div class="color-panel">
+                                    <div class="color-items color_01 active"></div>
+                                    <div class="color-items color_02"></div>
+                                    <div class="color-items color_03"></div>
+                                    <div class="color-items color_04"></div>
+                                    <div class="color-items color_05"></div>
+                                    <div class="color-items color_06"></div>
+                                    <div class="color-items color_07"></div>
+                                    <div class="color-items color_08"></div>
+                                    <div class="color-items color_09"></div>
+                                    <div class="color-items color_10"></div>
+                                    <div class="color-items color_11"></div>
+                                    <div class="color-items color_12"></div>
+                                    <div class="color-items color_13"></div>
+                                    <div class="color-items color_14"></div>
+                                    <div class="color-items color_15"></div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                            <div class="uselink">
-                                <ul>
-                                    <li>
-                                        <a href="#">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Questions</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Help</a>
-                                    </li>
-                                </ul>
+                          </div>
+                          <div class="col-md-6 half-area">
+                            <div class="acco-form-area">
+                              <div class="acco-form-hed">
+                                <h3 class="head">Chat Background Color </h3>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn btn-dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span class="color-icons"></span>
+                                  <span class="color-text">White (Default)</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <div class="color-panel">
+                                    <div class="color-items color_01 active"></div>
+                                    <div class="color-items color_02"></div>
+                                    <div class="color-items color_03"></div>
+                                    <div class="color-items color_04"></div>
+                                    <div class="color-items color_05"></div>
+                                    <div class="color-items color_06"></div>
+                                    <div class="color-items color_07"></div>
+                                    <div class="color-items color_08"></div>
+                                    <div class="color-items color_09"></div>
+                                    <div class="color-items color_10"></div>
+                                    <div class="color-items color_11"></div>
+                                    <div class="color-items color_12"></div>
+                                    <div class="color-items color_13"></div>
+                                    <div class="color-items color_14"></div>
+                                    <div class="color-items color_15"></div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
+                          </div>
+                          <div class="col-md-6 half-area mb-0">
+                            <div class="acco-form-area">
+                              <div class="acco-form-hed">
+                                <h3 class="head">Text Background Color</h3>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn btn-dropdown combo" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <div class="combination">
+                                    <span class="color-icons color_01"></span>
+                                    <span class="color-icons color_02 color-set"></span>
+                                  </div>
+                                  <span class="color-text">Blue (Default)</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <div class="color-panel">
+                                    <div class="color-items color_01 active"></div>
+                                    <div class="color-items color_02"></div>
+                                    <div class="color-items color_03"></div>
+                                    <div class="color-items color_04"></div>
+                                    <div class="color-items color_05"></div>
+                                    <div class="color-items color_06"></div>
+                                    <div class="color-items color_07"></div>
+                                    <div class="color-items color_08"></div>
+                                    <div class="color-items color_09"></div>
+                                    <div class="color-items color_10"></div>
+                                    <div class="color-items color_11"></div>
+                                    <div class="color-items color_12"></div>
+                                    <div class="color-items color_13"></div>
+                                    <div class="color-items color_14"></div>
+                                    <div class="color-items color_15"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </div>
-        </footer>
-        <section class="copy">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>Copyright © 2023 Chatbot. Powered by Spericorn</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+                <div class="accordion-item">
 
-  
-  <div class="modal fade" id="editprofile" tabindex="-1" aria-labelledby="editprofile" aria-hidden="true">
-    <div class="modal-dialog  modal-sm modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 class="modal-title" id="editprofile">Edit Profile</h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-           <form action="" class="form editProfile">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="pb-3">
-                            <div class="profile-upload">
-                                <div class="profile-round">
-                                    <div class="profile-img">
-                                        <img src="img/user.svg"/>
-                                    </div>
-                                    <div class="upload-btn">
-                                        <input type="file" class="file-upload"/>
-                                        <img src="img/uploadBtn.svg"/>
-                                    </div>
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Position and Size </button>
+                  </h2>
+
+                  <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                   
+                    <div class="accordion-body">
+                      
+                        <div class="acco-main-view">
+                            <div class="row">
+                            <div class="col-md-12 sub-area-head">
+                                <div class="sub-head">
+                                <h3 class="heading">Widget Size</h3>
                                 </div>
                             </div>
-                        </div>
+                            <div class="col-md-4 tiles-area">
+                                <div class="tiles active">
+                                <div class="tile-img">
+                                    <img src="img/small_size.svg" class="tile-view" />
+                                </div>
+                                <div class="tile-tg-area">
+                                    <h3 class="tg-head">Medium Size</h3>
+                                    <p class="tg-sm-view">( 520PX x 280PX)</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 tiles-area">
+                                <div class="tiles">
+                                <div class="tile-img">
+                                    <img src="img/medium_size.svg" class="tile-view" />
+                                </div>
+                                <div class="tile-tg-area">
+                                    <h3 class="tg-head">Large Size</h3>
+                                    <p class="tg-sm-view">( 520PX x 280PX)</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 tiles-area">
+                                <div class="tiles">
+                                <div class="tile-img">
+                                    <img src="img/large_size.svg" class="tile-view" />
+                                </div>
+                                <div class="tile-tg-area">
+                                    <h3 class="tg-head">Small Size</h3>
+                                    <p class="tg-sm-view">( 520PX x 280PX)</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 sub-area-head">
+                                <div class="sub-head line">
+                                <h3 class="heading">Position</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-6 tiles-area">
+                                <div class="tiles half-view">
+                                <div class="tile-img">
+                                    <img src="img/bottom_left.svg" class="tile-view" />
+                                </div>
+                                <div class="tile-tg-area">
+                                    <h3 class="tg-head">Bottom Left</h3>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 tiles-area">
+                                <div class="tiles half-view active">
+                                <div class="tile-img">
+                                    <img src="img/bottom_right.svg" class="tile-view" />
+                                </div>
+                                <div class="tile-tg-area">
+                                    <h3 class="tg-head">Bottom Left</h3>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 sub-area-head">
+                                <div class="sub-head line">
+                                <h3 class="heading">Border Type</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-6 tiles-area">
+                                <div class="tiles half-view">
+                                <div class="tile-img">
+                                    <img src="img/rounded.svg" class="tile-view" />
+                                </div>
+                                <div class="tile-tg-area">
+                                    <h3 class="tg-head">Rounded Corners</h3>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 tiles-area">
+                                <div class="tiles half-view active">
+                                <div class="tile-img">
+                                    <img src="img/flat.svg" class="tile-view" />
+                                </div>
+                                <div class="tile-tg-area">
+                                    <h3 class="tg-head">Flat Edges</h3>
+                                </div>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
                     </div>
-                    <div class="col-md-12">
-                        <div class="pb-3"> 
-                            <label class="form-label" for="Name">Name <span class="requre">*</span></label>
-                            <input type="text" class="form-control" id="name" name="Name" value="Adam.Baker5759">
-                        </div>
-                    </div>
-                   
-                    <div class="col-md-12">
-                        <div class="pb-3"> 
-                            <label class="form-label" for="email">Email ID<span class="requre">*</span></label>
-                            <input type="text" class="form-control" id="email" name="email" value="Company Name">
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="pb-3"> 
-                            <label class="form-label" for="email">Contact Number <span class="requre">*</span></label>
-                            <input type="text" class="form-control" id="ContactNumber" name="ContactNumber" value="email@email.com">
-                        </div>
-                    </div>
+                  </div>
                 </div>
-        
-                <div class="modal-btns">
-                    <button type="button" class="btn btn-secondary btn-cancel" data-bs-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary btn-save">Save</button>
+              </div>
+
+              <div class="info-area">
+                <div class="info-area-head">
+                  <div class="head">
+                    <h3>Widget Code</h3>
+                  </div>
+                  <div class="info-area-btn">
+                    <button class="btn btn-copt">
+                      <img src="img/cop" class="icon"/>
+                      Copy
+                    </button>
+                  </div>
                 </div>
-           </form>
+                <div class="info-cpy-area">
+                  <p>‘script type= ‘application/javascript’ sro=ht3 : 57 / 6: 44 om/f4o4ebtknaw/ji khnmdpyabludhx%/script.</p>
+                </div>
+                <div class="info-btn-bot">
+                  <button class="btn btn-save">
+                    Save Changes
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-6 widget-preview">
+              <div class="widget-view">
+                <div class="sub-area-head">
+                  <div class="sub-head">
+                    <h3 class="heading">Widget Preview</h3>
+                  </div>
+                </div>
+
+                <div class="chat-widget">
+                  <div class="chat-widget-head">
+                    <div class="chat-avatar">
+                      <img src="img/avatar.svg" class="avatar"/>
+                      <div class="online"></div>
+                    </div>
+                    <div class="chat-name">
+                      <h3 class="name">Kataline</h3>
+                    </div>
+                  </div>
+                  <div class="chat-widget-view">
+                    <div class="chat-widget-text">
+                      <p>Thank you for contacting us, </br>How can I help you?</p>
+                    </div>
+
+                    <div class="chat-widget-list-view">
+
+                      <div class="chat-widget-list">
+                        <div class="chat-widget-avatar">
+                          <img src="img/avatar.svg" class="avatar"/>
+                        </div>
+
+                        <div class="chat-widget-message">
+                          <p>Hi, I’m Kataline. Ask me anything</p>
+                          <span class="time-zone">9.24 AM</span>
+                        </div>
+                        
+                      </div>
+
+                      <div class="chat-widget-list rev">
+                        <div class="chat-widget-avatar">
+                          <img src="img/avatar.svg" class="avatar"/>
+                        </div>
+
+                        <div class="chat-widget-message">
+                          <p>Explain quantum computing in simple terms</p>
+                          <span class="time-zone">9.24 AM</span>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="chat-widget-txt-send">
+                      <input type="text" class="form-control" placeholder="Start a conversation"/>
+                      <button class="btn btn-send">
+                        <img src="img/send-icon.svg" class="send"/>
+                      </button>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+    <div class="footers">
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="fot-sec">
+                <div class="logo">
+                  <img src="img/logo.svg" class="logo-img" />
+                </div>
+                <div class="uselink">
+                  <ul>
+                    <li>
+                      <a href="#">Home</a>
+                    </li>
+                    <li>
+                      <a href="#">Questions</a>
+                    </li>
+                    <li>
+                      <a href="#">Help</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <section class="copy">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>Copyright © 2023 Chatbot. Powered by Spericorn</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="modal fade" id="editprofile" tabindex="-1" aria-labelledby="editprofile" aria-hidden="true">
+      <div class="modal-dialog  modal-sm modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="editprofile">Edit Profile</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="form editProfile">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="pb-3">
+                    <div class="profile-upload">
+                      <div class="profile-round">
+                        <div class="profile-img">
+                          <img src="img/user.svg" />
+                        </div>
+                        <div class="upload-btn">
+                          <input type="file" class="file-upload" />
+                          <img src="img/uploadBtn.svg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="pb-3">
+                    <label class="form-label" for="Name">Name <span class="requre">*</span>
+                    </label>
+                    <input type="text" class="form-control" id="name" name="Name" value="Adam.Baker5759">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="pb-3">
+                    <label class="form-label" for="email">Email ID <span class="requre">*</span>
+                    </label>
+                    <input type="text" class="form-control" id="email" name="email" value="Company Name">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="pb-3">
+                    <label class="form-label" for="email">Contact Number <span class="requre">*</span>
+                    </label>
+                    <input type="text" class="form-control" id="ContactNumber" name="ContactNumber" value="email@email.com">
+                  </div>
+                </div>
+              </div>
+              <div class="modal-btns">
+                <button type="button" class="btn btn-secondary btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary btn-save">Save</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </body>
 
-</body>
-
-    <script src="js/bootstrap.bundle.js"></script>
-
-    <script>
-        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-    </script>
-     
+ 
+  <script src="js/bootstrap.bundle.js"></script>
+  
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
 </html>
