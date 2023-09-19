@@ -1,17 +1,829 @@
-/* Error: expected "}".
- *     ,
- * 861 | @media(max-width:1340px){
- *     |                          ^
- *     '
- *   scss/widget.scss 861:26  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a     \2577 \a 861 \2502  @media(max-width:1340px){\a     \2502                           ^\a     \2575 \a   scss/widget.scss 861:26  root stylesheet';
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 37px;
+  height: 19px;
 }
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #1D63FF;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #1D63FF;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(17px);
+  -ms-transform: translateX(17px);
+  transform: translateX(17px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.accordion-basic-info .accordion {
+  padding: 40px 0px;
+}
+.accordion-basic-info .accordion .accordion-item {
+  border: 1px solid #E5EDFC;
+  border-radius: 9px;
+  margin-bottom: 40px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-header .accordion-button {
+  background: #FCFDFF 0% 0% no-repeat padding-box;
+  border: 1px solid #CDDCFA;
+  border-radius: 9px;
+  outline: none;
+  box-shadow: none;
+  color: #1D63FF;
+  letter-spacing: 0px;
+  font-size: 19px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Baloo 2", sans-serif;
+  padding: 15px 25px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-header .accordion-button::after {
+  background-size: 15px;
+  background-position: center;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view {
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .profile-avatar {
+  display: flex;
+  flex-wrap: wrap;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .profile-avatar .profile-hed {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .profile-avatar .profile-hed .head {
+  color: #193674;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Baloo 2", sans-serif;
+  margin-bottom: 0px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .profile-avatar .profile-view {
+  display: flex;
+  padding: 10px 15px;
+  align-items: center;
+  background: #F7F9FF;
+  border-radius: 9px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .profile-avatar .profile-view .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .profile-avatar .profile-view .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .profile-avatar .profile-view .avatar-size {
+  min-width: 150px;
+  margin-right: 15px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .profile-avatar .profile-view .avatar-size .txt {
+  color: #5F6B88;
+  font-family: "Baloo 2", sans-serif;
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .profile-avatar .profile-view .avatar-btn .btn-change {
+  color: #1D63FF;
+  border: none;
+  box-shadow: none;
+  background-color: transparent !important;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .acco-form-area {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .acco-form-area .acco-form-hed {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .acco-form-area .acco-form-hed .head {
+  color: #193674;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Baloo 2", sans-serif;
+  margin-bottom: 0px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .acco-form-area .acco-form-hed .head .waning {
+  color: #FF0000;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .acco-form-area .form-contraol {
+  background: #F7F9FF;
+  border-radius: 9px;
+  padding: 15px 20px;
+  color: #6D7DA0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Baloo 2", sans-serif;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .acco-form-area textarea {
+  resize: none;
+  height: 100px;
+  overflow: auto;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .acco-form-area .acco-form {
+  display: flex;
+  align-items: center;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .acco-form-area .acco-form .check-area {
+  display: flex;
+  margin-right: 30px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .acco-form-area .acco-form .check-area .text-view {
+  color: #193674;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 400;
+  margin-right: 10px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .acco-form-area .acco-form .check-area .switch {
+  margin-top: 3px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .acco-form-area .acco-form .frm-view .form-contraol {
+  width: 100px;
+  margin-right: 10px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .acco-form-area .acco-form .frm-view .txt-view {
+  color: #193674;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 400;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area {
+  margin-bottom: 30px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area {
+  margin-top: 0px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown {
+  width: 100%;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown {
+  background: #F7F9FF;
+  border-radius: 9px;
+  width: 100%;
+  padding: 15px 25px 15px 15px;
+  display: flex;
+  text-align: left;
+  justify-content: flex-start;
+  border: none;
+  box-shadow: none;
+  position: relative;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown::after {
+  content: "";
+  background-image: url("../img/arrow-down.svg");
+  width: 10px;
+  height: 10px;
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: repeat;
+  position: absolute;
+  right: 10px;
+  top: 22px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown .color-icons {
+  width: 23px;
+  height: 23px;
+  background: #228FFC;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown .color-icons.color_01 {
+  background-color: #773996;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown .color-icons.color_02 {
+  background-color: #6E4D9F;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown .color-icons.color_03 {
+  background-color: #3B57A6;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown .color-icons.color_04 {
+  background-color: #1D63FF;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown .color-icons.color_05 {
+  background-color: #2DC461;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown .color-icons.color_06 {
+  background-color: #A8CF38;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown .color-icons.color_07 {
+  background-color: #F3EC0A;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown .color-icons.color_08 {
+  background-color: #FCD504;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown .color-icons.color_09 {
+  background-color: #FBA919;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown .color-icons.color_10 {
+  background-color: #FD8722;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown .color-icons.color_11 {
+  background-color: #F73528;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown .color-icons.color_12 {
+  background-color: #C72D90;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown .color-icons.color_13 {
+  background-color: #525252;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown .color-icons.color_14 {
+  background-color: #363636;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown .color-icons.color_15 {
+  background-color: #9F721E;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown .color-text {
+  color: #193674;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  font-family: "Baloo 2", sans-serif;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown.combo .combination {
+  display: flex;
+  position: relative;
+  margin-right: 15px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown.combo .combination .color-set {
+  position: absolute;
+  left: 15px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu {
+  width: 230px;
+  background: #FFFFFF;
+  box-shadow: 2px 3px 13px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 12px;
+  border: none !important;
+  padding: 15px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items {
+  width: 27px;
+  height: 27px;
+  background-color: white;
+  border-radius: 50%;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.active {
+  position: relative;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.active::after {
+  content: "";
+  width: 31px;
+  height: 31px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_01 {
+  background-color: #773996;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_01::after {
+  border: 1px solid #773996;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_02 {
+  background-color: #6E4D9F;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_02::after {
+  border: 1px solid #6E4D9F;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_03 {
+  background-color: #3B57A6;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_03::after {
+  border: 1px solid #3B57A6;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_04 {
+  background-color: #1D63FF;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_04::after {
+  border: 1px solid #1D63FF;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_05 {
+  background-color: #2DC461;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_05::after {
+  border: 1px solid #2DC461;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_06 {
+  background-color: #A8CF38;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_06::after {
+  border: 1px solid #A8CF38;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_07 {
+  background-color: #F3EC0A;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_07::after {
+  border: 1px solid #F3EC0A;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_08 {
+  background-color: #FCD504;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_08::after {
+  border: 1px solid #FCD504;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_09 {
+  background-color: #FBA919;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_09::after {
+  border: 1px solid #FBA919;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_10 {
+  background-color: #FD8722;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_10::after {
+  border: 1px solid #FD8722;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_11 {
+  background-color: #F73528;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_11::after {
+  border: 1px solid #F73528;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_12 {
+  background-color: #C72D90;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_12::after {
+  border: 1px solid #C72D90;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_13 {
+  background-color: #525252;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_13::after {
+  border: 1px solid #525252;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_14 {
+  background-color: #363636;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_14::after {
+  border: 1px solid #363636;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_15 {
+  background-color: #9F721E;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.color_15::after {
+  border: 1px solid #9F721E;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .sub-area-head {
+  display: flex;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .sub-area-head .sub-head {
+  margin-bottom: 10px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .sub-area-head .sub-head .heading {
+  color: #193674;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  font-family: "Baloo 2", sans-serif;
+  margin-bottom: 0px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .sub-area-head .sub-head.line {
+  position: relative;
+  width: 100%;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .sub-area-head .sub-head.line::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #E8EDFA;
+  position: absolute;
+  top: 12px;
+  z-index: 0;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .sub-area-head .sub-head.line .heading {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  display: initial;
+  padding-right: 10px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .tiles-area .tiles {
+  display: flex;
+  flex-wrap: wrap;
+  background: #F7F9FF;
+  border-radius: 9px;
+  padding: 30px;
+  border: 2px solid #F7F9FF;
+  transition: 0.2s;
+  margin-bottom: 30px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .tiles-area .tiles .tile-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .tiles-area .tiles .tile-img .tile-view {
+  max-width: 85px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .tiles-area .tiles:hover {
+  border: 2px solid #1D63FF;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .tiles-area .tiles.active {
+  border: 2px solid #1D63FF;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .tiles-area .tiles .tile-tg-area {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .tiles-area .tiles .tile-tg-area .tg-head {
+  font-size: 16px;
+  font-weight: 1.5;
+  color: #193674;
+  font-weight: 500;
+  font-family: "Baloo 2", sans-serif;
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .tiles-area .tiles .tile-tg-area .tg-sm-view {
+  color: #8EA6D8;
+  font-size: 14px;
+  font-weight: 1.5;
+  color: #8EA6D8;
+  font-weight: 400;
+  font-family: "Baloo 2", sans-serif;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .tiles-area .tiles.half-view {
+  display: flex;
+  padding: 15px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .tiles-area .tiles.half-view .tile-img {
+  width: auto;
+  margin-right: 20px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .tiles-area .tiles.half-view .tile-img .tile-view {
+  max-width: 65px;
+}
+
+.info-area {
+  margin-bottom: 30px;
+}
+.info-area .info-area-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.info-area .info-area-head .head h3 {
+  font-size: 19px;
+  font-weight: 1.5;
+  color: #193674;
+  font-family: "Baloo 2", sans-serif;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+.info-area .info-area-head .info-area-btn .btn-copt {
+  border: 1px solid #1D63FF;
+  border-radius: 19px;
+  padding: 5px 20px;
+  font-size: 15px;
+  font-weight: 1.5;
+  color: #1D63FF;
+  font-family: "Baloo 2", sans-serif;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+.info-area .info-area-head .info-area-btn .btn-copt img {
+  margin-right: 8px;
+}
+.info-area .info-cpy-area {
+  background: #F7F9FF;
+  border-radius: 3px;
+  height: 166px;
+  color: #6D7DA0;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  padding: 15px;
+  border-radius: 3px;
+}
+.info-area .info-cpy-area p {
+  font-size: 19px;
+  margin-bottom: 0px;
+}
+.info-area .info-btn-bot {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+.info-area .info-btn-bot .btn-save {
+  background-color: #1D63FF;
+  padding: 10px 55px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #FFFFFF;
+}
+
+.widget-preview {
+  padding: 40px 30px;
+}
+.widget-preview .widget-view {
+  background: #FFFFFF;
+  border: 1px solid #CDDCFA;
+  border-radius: 11px;
+  padding: 30px;
+}
+.widget-preview .widget-view .sub-area-head {
+  display: flex;
+}
+.widget-preview .widget-view .sub-area-head .sub-head {
+  margin-bottom: 50px;
+}
+.widget-preview .widget-view .sub-area-head .sub-head .heading {
+  color: #193674;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  font-family: "Baloo 2", sans-serif;
+  margin-bottom: 0px;
+}
+.widget-preview .widget-view .chat-widget {
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 150px;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-head {
+  display: flex;
+  background-color: #228FFC;
+  padding: 20px;
+  align-items: center;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-head .chat-avatar {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 15px;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-head .chat-avatar .online {
+  position: absolute;
+  left: 19px;
+  top: 17px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #00FF0A;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-head .chat-avatar .avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-head .chat-name .name {
+  color: #FFFFFF;
+  font-size: 19px;
+  font-weight: 400;
+  font-family: "Baloo 2", sans-serif;
+  margin-bottom: 0px;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view {
+  padding: 25px;
+  background: #F7F9FF;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-text {
+  margin-bottom: 50px;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-text p {
+  margin: 0px;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 16px;
+  color: #4F7CA8;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list {
+  display: flex;
+  margin-bottom: 30px;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list .chat-widget-avatar {
+  margin-right: 10px;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list .chat-widget-avatar .avatar {
+  width: 25px;
+  height: 25px;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list .chat-widget-message {
+  background: #184B7E;
+  border-radius: 0px 10px 10px 10px;
+  padding: 15px 15px 35px 15px;
+  position: relative;
+  max-width: 75%;
+  margin-top: 10px;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list .chat-widget-message p {
+  margin: 0px;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list .chat-widget-message .time-zone {
+  position: absolute;
+  right: 13px;
+  font-weight: 400;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 10px;
+  color: #FFFFFF;
+  bottom: 10px;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list.rev {
+  flex-direction: row-reverse;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list.rev .chat-widget-avatar {
+  margin-right: 0px;
+  margin-left: 10px;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list.rev .chat-widget-message {
+  border-radius: 10px 0px 10px 10px;
+  background-color: #228FFC;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-txt-send {
+  display: flex;
+  position: relative;
+  margin-top: 100px;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-txt-send .form-control {
+  background: #FFFFFF;
+  border: 1px solid #E5EDFF;
+  border-radius: 28px;
+  font-size: 16px;
+  font-family: "Baloo 2", sans-serif;
+  color: #B6C9E2;
+  font-weight: 400;
+  padding: 13px 50px 13px 20px;
+  outline: none;
+  box-shadow: none;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-txt-send .btn-send {
+  position: absolute;
+  right: 7px;
+  padding: 0px;
+  margin: 0px;
+  width: auto !important;
+  top: 6px;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-txt-send .btn-send .send {
+  width: 36px;
+}
+
+@media (max-width: 1679px) {
+  .accordion-basic-info .accordion {
+    padding: 30px 0px;
+  }
+  .accordion-basic-info .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 18px;
+  }
+  .accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .acco-form-area .acco-form-hed .head {
+    font-size: 15px;
+  }
+  .accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .acco-form-area .form-contraol {
+    font-size: 15px;
+  }
+  .accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .acco-form-area .acco-form .check-area .text-view {
+    font-size: 15px;
+  }
+  .accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .acco-form-area .acco-form .frm-view .txt-view {
+    font-size: 15px;
+  }
+  .accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown .color-text {
+    font-size: 15px;
+  }
+  .accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .tiles-area .tiles .tile-tg-area .tg-head {
+    font-size: 15px;
+  }
+  .accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .tiles-area .tiles .tile-tg-area .tg-sm-view {
+    font-size: 13px;
+  }
+  .info-area .info-area-head .head h3 {
+    font-size: 18px;
+  }
+  .info-area .info-cpy-area p {
+    font-size: 18px;
+  }
+  .widget-preview {
+    padding: 30px;
+  }
+  .widget-preview .widget-view .sub-area-head .sub-head {
+    margin-bottom: 40px;
+  }
+  .widget-preview .widget-view .chat-widget .chat-widget-head .chat-name .name {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1480px) {
+  .accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view {
+    padding: 10px;
+  }
+  .accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .tiles-area .tiles .tile-img .tile-view {
+    max-width: 65px;
+  }
+  .accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .tiles-area .tiles.half-view .tile-img .tile-view {
+    max-width: 55px;
+  }
+  .info-area .info-area-head .head h3 {
+    font-size: 17px;
+  }
+}
+
+/*# sourceMappingURL=widget.css.map */
