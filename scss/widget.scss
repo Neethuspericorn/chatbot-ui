@@ -434,6 +434,7 @@
                             border: 2px solid #F7F9FF;
                             transition: .2s;
                             margin-bottom: 30px;
+                            width: 100% !important;
                             .tile-img{
                                 width: 100%;
                                 display: flex;
@@ -480,6 +481,7 @@
                             &.half-view{
                                 display: flex;
                                 padding: 15px;
+                                
                                 .tile-img{
                                     width: auto;
                                     margin-right: 20px;

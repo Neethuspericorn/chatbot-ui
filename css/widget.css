@@ -425,6 +425,7 @@ input:checked + .slider:before {
   border: 2px solid #F7F9FF;
   transition: 0.2s;
   margin-bottom: 30px;
+  width: 100% !important;
 }
 .accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .tiles-area .tiles .tile-img {
   width: 100%;
