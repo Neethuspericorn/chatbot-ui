@@ -280,7 +280,6 @@
                                 .color-icons{
                                     width: 23px;
                                     height: 23px;
-                                    background: #228FFC;
                                     border-radius: 50%;
                                     margin-right: 10px;
                                     &.color_01{
@@ -363,7 +362,6 @@
                                     .color-items{
                                         width: 27px;
                                         height: 27px;
-                                        background-color: #ffff;
                                         border-radius: 50%;
                                         &.active{
                                             position: relative;
@@ -733,6 +731,12 @@
                 }
             }
         }
+    }
+}
+.color_F{
+    background-color: #FFFFFF;
+    &::after{
+        border: 1px solid #FFFFFF;
     }
 }
 .color_0{

@@ -284,7 +284,6 @@ input:checked + .slider:before {
 .accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .btn-dropdown .color-icons {
   width: 23px;
   height: 23px;
-  background: #228FFC;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -365,7 +364,6 @@ input:checked + .slider:before {
 .accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items {
   width: 27px;
   height: 27px;
-  background-color: white;
   border-radius: 50%;
 }
 .accordion-basic-info .accordion .accordion-item .accordion-body .half-area .acco-form-area .dropdown .dropdown-menu .color-panel .color-items.active {
@@ -704,6 +702,13 @@ input:checked + .slider:before {
 }
 .widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-txt-send .btn-send .send {
   width: 14px;
+}
+
+.color_F {
+  background-color: #FFFFFF;
+}
+.color_F::after {
+  border: 1px solid #FFFFFF;
 }
 
 .color_0 {
