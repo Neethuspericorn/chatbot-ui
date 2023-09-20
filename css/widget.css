@@ -233,6 +233,21 @@ input:checked + .slider:before {
   font-family: "Baloo 2", sans-serif;
   font-weight: 400;
 }
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .acco-form-area.add-location {
+  margin-top: 0px !important;
+  position: relative;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .acco-form-area.add-location .form-contraol {
+  padding-left: 50px;
+}
+.accordion-basic-info .accordion .accordion-item .accordion-body .acco-main-view .acco-form-area.add-location .loc-pin {
+  width: 13px;
+  height: 17px;
+  position: absolute;
+  z-index: 9;
+  bottom: 25px;
+  left: 20px;
+}
 .accordion-basic-info .accordion .accordion-item .accordion-body .half-area {
   margin-bottom: 30px;
 }
@@ -615,12 +630,23 @@ input:checked + .slider:before {
 
 .widget-preview {
   padding: 40px 30px;
+  position: relative;
 }
 .widget-preview .widget-view {
   background: #FFFFFF;
   border: 1px solid #CDDCFA;
   border-radius: 11px;
   padding: 30px;
+}
+.widget-preview .widget-view.pos-bot-left {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+}
+.widget-preview .widget-view.pos-bot-right {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
 }
 .widget-preview .widget-view .sub-area-head {
   display: flex;
@@ -639,13 +665,60 @@ input:checked + .slider:before {
 .widget-preview .widget-view .chat-widget {
   border-radius: 30px;
   overflow: hidden;
-  margin-bottom: 150px;
+}
+.widget-preview .widget-view .chat-widget.flat-border {
+  border-radius: 0px !important;
 }
 .widget-preview .widget-view .chat-widget .chat-widget-head {
   display: flex;
   background-color: #228FFC;
   padding: 20px;
   align-items: center;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-head.color_01 {
+  background-color: #773996;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-head.color_02 {
+  background-color: #6E4D9F;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-head.color_03 {
+  background-color: #3B57A6;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-head.color_04 {
+  background-color: #1D63FF;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-head.color_05 {
+  background-color: #2DC461;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-head.color_06 {
+  background-color: #A8CF38;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-head.color_07 {
+  background-color: #F3EC0A;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-head.color_08 {
+  background-color: #FCD504;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-head.color_09 {
+  background-color: #FBA919;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-head.color_10 {
+  background-color: #FD8722;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-head.color_11 {
+  background-color: #F73528;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-head.color_12 {
+  background-color: #C72D90;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-head.color_13 {
+  background-color: #525252;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-head.color_14 {
+  background-color: #363636;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-head.color_15 {
+  background-color: #9F721E;
 }
 .widget-preview .widget-view .chat-widget .chat-widget-head .chat-avatar {
   position: relative;
@@ -737,6 +810,51 @@ input:checked + .slider:before {
 .widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list.rev .chat-widget-message {
   border-radius: 10px 0px 10px 10px;
   background-color: #228FFC;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list.rev .chat-widget-message.color_01 {
+  background-color: #773996;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list.rev .chat-widget-message.color_02 {
+  background-color: #6E4D9F;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list.rev .chat-widget-message.color_03 {
+  background-color: #3B57A6;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list.rev .chat-widget-message.color_04 {
+  background-color: #1D63FF;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list.rev .chat-widget-message.color_05 {
+  background-color: #2DC461;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list.rev .chat-widget-message.color_06 {
+  background-color: #A8CF38;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list.rev .chat-widget-message.color_07 {
+  background-color: #F3EC0A;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list.rev .chat-widget-message.color_08 {
+  background-color: #FCD504;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list.rev .chat-widget-message.color_09 {
+  background-color: #FBA919;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list.rev .chat-widget-message.color_10 {
+  background-color: #FD8722;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list.rev .chat-widget-message.color_11 {
+  background-color: #F73528;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list.rev .chat-widget-message.color_12 {
+  background-color: #C72D90;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list.rev .chat-widget-message.color_13 {
+  background-color: #525252;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list.rev .chat-widget-message.color_14 {
+  background-color: #363636;
+}
+.widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-list-view .chat-widget-list.rev .chat-widget-message.color_15 {
+  background-color: #9F721E;
 }
 .widget-preview .widget-view .chat-widget .chat-widget-view .chat-widget-txt-send {
   display: flex;

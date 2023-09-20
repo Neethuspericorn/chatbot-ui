@@ -230,6 +230,21 @@
                                 }
                             }
                         }
+                        &.add-location{
+                            margin-top: 0px !important;
+                            position: relative;
+                            .form-contraol {
+                                padding-left: 50px;
+                            }
+                            .loc-pin{
+                                width: 13px;
+                                height: 17px;
+                                position: absolute;
+                                z-index: 9;
+                                bottom: 25px;
+                                left: 20px;
+                            }
+                        }
                     }
                 }
 
@@ -639,11 +654,22 @@
 
 .widget-preview{
     padding: 40px 30px;
+    position: relative;
     .widget-view{
         background: #FFFFFF;
         border: 1px solid #CDDCFA;
         border-radius: 11px;
         padding: 30px;
+        &.pos-bot-left{
+            position: fixed;
+            bottom: 15px;
+            left: 15px;
+        }
+        &.pos-bot-right{
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+        }
         .sub-area-head{
             display: flex;
             .sub-head{
@@ -662,12 +688,59 @@
         .chat-widget{
             border-radius: 30px;
             overflow: hidden;
-            margin-bottom: 150px;
+            &.flat-border{
+                border-radius: 0px !important;
+            }
             .chat-widget-head{
                 display: flex;
                 background-color: #228FFC;
                 padding: 20px;
                 align-items: center;
+                &.color_01{
+                    background-color: #773996;
+                }
+                &.color_02{
+                    background-color: #6E4D9F;
+                }
+                &.color_03{
+                    background-color: #3B57A6;
+                }
+                &.color_04{
+                    background-color: #1D63FF;
+                }
+                &.color_05{
+                    background-color: #2DC461;
+                }
+                &.color_06{
+                    background-color: #A8CF38;
+                }
+                &.color_07{
+                    background-color: #F3EC0A;
+                }
+                &.color_08{
+                    background-color: #FCD504;
+                }
+                &.color_09{
+                    background-color:#FBA919;
+                }
+                &.color_10{
+                    background-color: #FD8722;
+                }
+                &.color_11{
+                    background-color: #F73528;
+                }
+                &.color_12{
+                    background-color: #C72D90;
+                }
+                &.color_13{
+                    background-color: #525252;
+                }
+                &.color_14{
+                    background-color: #363636;
+                }
+                &.color_15{
+                    background-color: #9F721E;
+                }
                 .chat-avatar{
                     position: relative;
                     width: 25px;
@@ -760,6 +833,51 @@
                             .chat-widget-message{
                                 border-radius: 10px 0px 10px 10px;
                                 background-color: #228FFC;
+                                &.color_01{
+                                    background-color: #773996;
+                                }
+                                &.color_02{
+                                    background-color: #6E4D9F;
+                                }
+                                &.color_03{
+                                    background-color: #3B57A6;
+                                }
+                                &.color_04{
+                                    background-color: #1D63FF;
+                                }
+                                &.color_05{
+                                    background-color: #2DC461;
+                                }
+                                &.color_06{
+                                    background-color: #A8CF38;
+                                }
+                                &.color_07{
+                                    background-color: #F3EC0A;
+                                }
+                                &.color_08{
+                                    background-color: #FCD504;
+                                }
+                                &.color_09{
+                                    background-color:#FBA919;
+                                }
+                                &.color_10{
+                                    background-color: #FD8722;
+                                }
+                                &.color_11{
+                                    background-color: #F73528;
+                                }
+                                &.color_12{
+                                    background-color: #C72D90;
+                                }
+                                &.color_13{
+                                    background-color: #525252;
+                                }
+                                &.color_14{
+                                    background-color: #363636;
+                                }
+                                &.color_15{
+                                    background-color: #9F721E;
+                                }
                             }
                         }
                     } 
