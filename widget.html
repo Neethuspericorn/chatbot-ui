@@ -265,15 +265,17 @@
                    
                     <div class="accordion-body">
                       
-                        <div class="acco-main-view not-allowed">
-                            <div class="row">
-                            <div class="col-md-12 sub-area-head">
-                                <div class="sub-head">
-                                <h3 class="heading">Widget Size</h3>
-                                </div>
+                        <div class="acco-main-view">
+                            <div class="row ">
+                              <div class="col-md-12 sub-area-head">
+                                  <div class="sub-head">
+                                  <h3 class="heading">Widget Size</h3>
+                                  </div>
+                              </div>
                             </div>
+                            <div class="row size">
                             <div class="col-md-4 tiles-area">
-                                <button class="tiles active">
+                                <button class="tiles" id="size-md">
                                 <div class="tile-img">
                                     <img src="img/small_size.svg" class="tile-view" />
                                 </div>
@@ -284,7 +286,7 @@
                                 </button>
                             </div>
                             <div class="col-md-4 tiles-area">
-                                <button class="tiles">
+                                <button class="tiles" id="size-lg">
                                 <div class="tile-img">
                                     <img src="img/medium_size.svg" class="tile-view" />
                                 </div>
@@ -295,12 +297,12 @@
                                 </button>
                             </div>
                             <div class="col-md-4 tiles-area">
-                                <button class="tiles">
+                                <button class="tiles" id="size-xg">
                                 <div class="tile-img">
                                     <img src="img/large_size.svg" class="tile-view" />
                                 </div>
                                 <div class="tile-tg-area">
-                                    <h3 class="tg-head">Small Size</h3>
+                                    <h3 class="tg-head">Large Size</h3>
                                     <p class="tg-sm-view">( 520PX x 280PX)</p>
                                 </div>
                                 </button>
@@ -576,6 +578,12 @@
 
  
   <script src="js/bootstrap.bundle.js"></script>
+
+
+  <script>
+    
+
+  </script>
   
   <script>
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
